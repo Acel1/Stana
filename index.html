@@ -6,44 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
     <title>Stava</title>
   </head>
   <body>
     <header id="header">
-      <a href=""><img id="main-logo" src="" alt="" /></a>
+      <a href="index.html"><img id="main-logo" src="public/image/img-stava.png" alt="main-logo" /></a>
       <nav>
         <div id="nav-research">
-            <button id="research-btn"></button>
-            <form id="research-form" action="">
-                <ul></ul>
-                <input type="text" name="" id="">
-                <button></button>
-            </form>
-            <button id="esc-nav-form"></button>
+          <button id="research-btn"><i class="fas fa-search"></i></button>
+          <form id="research-form" action="">
+            <button>Athlètes<i class="fas fa-angle-down"></i></button>
+            <ul>
+              <li>Activités</li>
+              <li>Athlètes</li>
+              <li>Clubs</li>
+              <li>Segments</li>
+            </ul>
+            <input type="text" name="" id="" />
+            <button><i class="fas fa-search"></i></button>
+            <button id="esc-nav-form"><i class="fas fa-times"></i></button>
+          </form>
         </div>
         <ul id="nav-header">
-          <li><a href=""></a><button></button></li>
-          <li><a href=""></a><button></button></li>
-          <li><a href=""></a><button></button></li>
-          <li><a href=""></a><button></button></li>
+          <li>
+            <a href="">
+              <button>Tableau de bord<i class="fas fa-angle-down"></i></button>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <button>Entraînement<i class="fas fa-angle-down"></i></button>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <button>Explorer<i class="fas fa-angle-down"></i></button>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <button>Challenges</button>
+            </a>
+          </li>
         </ul>
       </nav>
-      <div id="right-side-nav"></div>
+      <div id="right-side-nav">
+        <button id="subscribe-btn">Offrir un abonnement</button>
+        <button id="notification-bell"><i class="far fa-bell"></i></button>
+        <ul></ul>
+        <div id="profile-settings-list">
+          <a href="#"><img src="public/image/profile-picture.jpg" alt="" /></a>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <i class="fas fa-plus"></i>
+      </div>
     </header>
     <section id="left-side">
       <div id="aside-profil"></div>
       <div id="aside-stats"></div>
+    </section>
     <section id="feed">
-        <div id="feed-nav"></div>
-        <div id="year-stats"></div>
-        <article id="activities"></article>
+      <div id="feed-nav"></div>
+      <div id="year-stats"></div>
+      <article id="activities"></article>
     </section>
     <section id="right-side">
-        <div id="challenges"></div>
-        <div id="clubs"></div>
-        <div id="info-confidentialité"></div>
-        <div id="contact-suggest"></div>
-        <div id="side-footer"></div>
+      <div id="challenges"></div>
+      <div id="clubs"></div>
+      <div id="info-confidentialité"></div>
+      <div id="contact-suggest"></div>
+      <div id="side-footer"></div>
     </section>
     <footer id="footer"></footer>
   </body>
