@@ -16,25 +16,25 @@
     <title>Stava</title>
   </head>
   <body>
-    <header id="header">
-      <a href="index.html"><img id="main-logo" src="public/image/img-stava.png" alt="main-logo" /></a>
-      <nav>
-        <div id="nav-research">
-          <button id="research-btn"><i class="fas fa-search"></i></button>
-          <form id="research-form" action="">
-            <button>Athlètes<i class="fas fa-angle-down"></i></button>
-            <ul>
+    <header class="header">
+      <a href="index.html"><img class="header__logo" src="public/image/img-stava.png" alt="main-logo" /></a>
+      <nav class="main-nav">
+        <form class="research-form">
+          <button id="research-form__btn"><i class="fas fa-search"></i></button>
+          <div class="research-form-group" action="">
+            <button class="research-form-group__btn">Athlètes<i class="fas fa-angle-down"></i></button>
+            <ul class="research-form-group__ul">
               <li>Activités</li>
               <li>Athlètes</li>
               <li>Clubs</li>
               <li>Segments</li>
             </ul>
-            <input type="text" name="" id="" />
+            <input type="text" name="" class="" />
             <button><i class="fas fa-search"></i></button>
-            <button id="esc-nav-form"><i class="fas fa-times"></i></button>
-          </form>
-        </div>
-        <ul id="nav-header">
+            <button class="esc-nav-form"><i class="fas fa-times"></i></button>
+          </div>
+        </form>
+        <ul class="main-nav-dropdowns">
           <li>
             <a href="">
               <button>Tableau de bord<i class="fas fa-angle-down"></i></button>
@@ -57,33 +57,35 @@
           </li>
         </ul>
       </nav>
-      <div id="right-side-nav">
-        <button id="subscribe-btn">Offrir un abonnement</button>
-        <button id="notification-bell"><i class="far fa-bell"></i></button>
+      <nav class="user-nav">
+        <button class="subscribe-btn">Offrir un abonnement</button>
+        <button class="notification-bell"><i class="far fa-bell"></i></button>
         <ul></ul>
-        <div id="profile-settings-list">
+        <div class="profile-settings-list">
           <a href="#"><img src="public/image/profile-picture.jpg" alt="" /></a>
           <i class="fas fa-angle-down"></i>
         </div>
         <i class="fas fa-plus"></i>
-      </div>
+      </nav>
     </header>
     <section id="left-side">
-      <div id="aside-profil"></div>
-      <div id="aside-stats"></div>
+      <div class="aside-profil"></div>
+      <div class="aside-stats"></div>
     </section>
     <section id="feed">
-      <div id="feed-nav"></div>
-      <div id="year-stats"></div>
-      <article id="activities"></article>
+      <div class="feed-nav"></div>
+      <div class="year-stats"></div>
+      <article class="activities"></article>
     </section>
     <section id="right-side">
-      <div id="challenges"></div>
-      <div id="clubs"></div>
-      <div id="info-confidentialité"></div>
-      <div id="contact-suggest"></div>
-      <div id="side-footer"></div>
+      <div class="challenges"></div>
+      <div class="clubs"></div>
+      <div class="info-confidentialité"></div>
+      <div class="contact-suggest"></div>
+      <div class="side-footer"></div>
     </section>
     <footer id="footer"></footer>
+
+    <script src="./js/research-btn.js"></script>
   </body>
 </html>
