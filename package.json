@@ -1,0 +1,23 @@
+{
+  "name": "stana",
+  "version": "1.0.0",
+  "description": "Interface practice by 'copying' Strava website homepage design.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Acel1/Stava.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Acel1/Stava/issues"
+  },
+  "homepage": "https://github.com/Acel1/Stava#readme",
+  "dependencies": {
+    "sass": "^1.45.2"
+  }
+}
