@@ -18,22 +18,8 @@
   <body>
     <header class="header">
       <a href="index.html"><img class="header__logo" src="public/image/img-stava.png" alt="main-logo" /></a>
-      <nav class="main-nav">
-        <form class="research-form">
-          <button id="research-form__btn"><i class="fas fa-search"></i></button>
-          <div class="research-form-group" action="">
-            <button class="research-form-group__btn">Athlètes<i class="fas fa-angle-down"></i></button>
-            <ul class="research-form-group__ul">
-              <li>Activités</li>
-              <li>Athlètes</li>
-              <li>Clubs</li>
-              <li>Segments</li>
-            </ul>
-            <input type="text" name="" class="" />
-            <button><i class="fas fa-search"></i></button>
-            <button class="esc-nav-form"><i class="fas fa-times"></i></button>
-          </div>
-        </form>
+      <nav id="main-nav">
+        <button id="research-form__btn"><i class="fas fa-search"></i></button>
         <ul class="main-nav-dropdowns">
           <li>
             <a href="">
@@ -57,6 +43,20 @@
           </li>
         </ul>
       </nav>
+      <form id="research-form">
+        <div class="research-form-group">
+          <button class="research-form-group__btn">Athlètes<i class="fas fa-angle-down"></i></button>
+          <ul class="research-form-group__ul">
+            <li>Activités</li>
+            <li>Athlètes</li>
+            <li>Clubs</li>
+            <li>Segments</li>
+          </ul>
+          <input type="text" name="" class="" />
+          <button><i class="fas fa-search"></i></button>
+          <button id="esc-nav-form"><i class="fas fa-times"></i></button>
+        </div>
+      </form>
       <nav class="user-nav">
         <button class="subscribe-btn">Offrir un abonnement</button>
         <button class="notification-bell"><i class="far fa-bell"></i></button>

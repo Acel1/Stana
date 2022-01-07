@@ -11,6 +11,16 @@ body {
 
 .header {
   display: flex;
+  height: 60px;
+}
+
+#main-nav {
+  display: flex;
+  width: 40%;
+}
+
+#research-form {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

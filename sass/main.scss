@@ -1,10 +1,14 @@
+//---utils---//
 @import "./utils/variables";
+@import "./utils/mixins";
 
+//---base---//
 @import "./base/fonts";
 @import "./base/base";
 
-@import "./layout/header"; // @import "./base/";
+//---components---//
+@import "./components/buttons";
+@import "./components/imgs";
 
-// @import "./layout/";
-
-// @import "./components/";
+//---layout---//
+@import "./layout/header";
