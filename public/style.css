@@ -15,18 +15,26 @@ a {
   text-decoration: none;
 }
 
+.dropdown {
+  padding: 0 1rem;
+}
+.dropdown i {
+  padding-left: 0.5rem;
+}
+
 .main-logo {
   float: left;
   margin: 0 1rem;
   padding: 0.2rem;
 }
 
+.profile-picture-img {
+  width: 37px;
+}
+
 .header {
   height: 40px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 #research-form {
@@ -34,11 +42,17 @@ a {
 }
 
 #main-nav {
+  height: 100%;
+  float: left;
   display: flex;
+  align-items: center;
 }
 
 #user-nav {
+  height: 100%;
+  float: right;
   display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

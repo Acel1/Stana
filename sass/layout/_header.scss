@@ -1,18 +1,23 @@
 .header {
   height: $height-header;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 #research-form {
   display: none;
 }
 
 #main-nav {
+  height: 100%;
+  float: left;
   display: flex;
+  align-items: center;
+  // width: 35%;
 }
 
 #user-nav {
+  height: 100%;
+  float: right;
   display: flex;
+  align-items: center;
+  // width: 30%;
 }

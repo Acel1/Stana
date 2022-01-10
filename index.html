@@ -17,45 +17,50 @@
   </head>
   <body>
     <header class="header">
+      <a href="index.html"><img class="main-logo" src="public/image/img-stava.png" alt="main-logo" /></a>
       <nav id="main-nav">
-        <a href="index.html"><img class="main-logo" src="public/image/img-stava.png" alt="main-logo" /></a>
-        <button id="research-form-btn"><i class="fas fa-search"></i></button>
-        <ul class="dropdown">
-          <a href=""> Tableau de bord<i class="fas fa-angle-down"></i> </a>
-        </ul>
-        <ul class="dropdown">
-          <a href=""> Entraînement<i class="fas fa-angle-down"></i> </a>
-        </ul>
-        <ul class="dropdown">
-          <a href=""> Explorer<i class="fas fa-angle-down"></i> </a>
-        </ul>
-        <ul class="dropdown">
-          <a href=""> Challenges </a>
-        </ul>
+        <button class="btn-header" id="research-form-btn"><i class="fas fa-search"></i></button>
+        <a href=""
+          ><ul class="dropdown">
+            Tableau de bord<i class="fas fa-angle-down"></i></ul
+        ></a>
+        <a href=""
+          ><ul class="dropdown">
+            Entraînement<i class="fas fa-angle-down"></i></ul
+        ></a>
+        <a href=""
+          ><ul class="dropdown">
+            Explorer<i class="fas fa-angle-down"></i></ul
+        ></a>
+        <a href="">
+          <ul class="btn-header">
+            Challenges
+          </ul>
+        </a>
       </nav>
       <form id="research-form">
         <div class="research-form-group">
-          <button class="research-form-group__btn">Athlètes<i class="fas fa-angle-down"></i></button>
-          <ul class="research-form-group__ul">
+          <button class="research-form-group__btn btn-header">Athlètes<i class="fas fa-angle-down"></i></button>
+          <ul class="research-form-group__ul dropdown">
             <li>Activités</li>
             <li>Athlètes</li>
             <li>Clubs</li>
             <li>Segments</li>
           </ul>
           <input type="text" name="" class="" />
-          <button><i class="fas fa-search"></i></button>
-          <button id="esc-nav-form"><i class="fas fa-times"></i></button>
+          <button class="btn-header"><i class="fas fa-search"></i></button>
+          <button class="btn-header" id="esc-nav-form"><i class="fas fa-times"></i></button>
         </div>
       </form>
       <nav id="user-nav">
-        <button class="subscribe-btn">Offrir un abonnement</button>
-        <button class="notification-bell"><i class="far fa-bell"></i></button>
+        <button class="subscribe-btn btn-header">Offrir un abonnement</button>
+        <button class="notification-bell btn-header"><i class="far fa-bell"></i></button>
         <ul></ul>
-        <div class="profile-settings-list">
-          <a href="#"><img class="profile-picture" src="public/image/profile-picture.jpg" alt="" /></a>
+        <ul class="profile-settings-list dropdown">
+          <a href="#"><img class="profile-picture-img" src="public/image/profile-picture.jpg" alt="" /></a>
           <i class="fas fa-angle-down"></i>
-        </div>
-        <i class="fas fa-plus"></i>
+        </ul>
+        <button class="btn-header"><i class="fas fa-plus"></i></button>
       </nav>
     </header>
     <section id="left-side">
