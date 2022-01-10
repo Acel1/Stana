@@ -17,30 +17,20 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html"><img class="header__logo" src="public/image/img-stava.png" alt="main-logo" /></a>
       <nav id="main-nav">
-        <button id="research-form__btn"><i class="fas fa-search"></i></button>
-        <ul class="main-nav-dropdowns">
-          <li>
-            <a href="">
-              <button>Tableau de bord<i class="fas fa-angle-down"></i></button>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <button>Entraînement<i class="fas fa-angle-down"></i></button>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <button>Explorer<i class="fas fa-angle-down"></i></button>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <button>Challenges</button>
-            </a>
-          </li>
+        <a href="index.html"><img class="main-logo" src="public/image/img-stava.png" alt="main-logo" /></a>
+        <button id="research-form-btn"><i class="fas fa-search"></i></button>
+        <ul class="dropdown">
+          <a href=""> Tableau de bord<i class="fas fa-angle-down"></i> </a>
+        </ul>
+        <ul class="dropdown">
+          <a href=""> Entraînement<i class="fas fa-angle-down"></i> </a>
+        </ul>
+        <ul class="dropdown">
+          <a href=""> Explorer<i class="fas fa-angle-down"></i> </a>
+        </ul>
+        <ul class="dropdown">
+          <a href=""> Challenges </a>
         </ul>
       </nav>
       <form id="research-form">
@@ -57,12 +47,12 @@
           <button id="esc-nav-form"><i class="fas fa-times"></i></button>
         </div>
       </form>
-      <nav class="user-nav">
+      <nav id="user-nav">
         <button class="subscribe-btn">Offrir un abonnement</button>
         <button class="notification-bell"><i class="far fa-bell"></i></button>
         <ul></ul>
         <div class="profile-settings-list">
-          <a href="#"><img src="public/image/profile-picture.jpg" alt="" /></a>
+          <a href="#"><img class="profile-picture" src="public/image/profile-picture.jpg" alt="" /></a>
           <i class="fas fa-angle-down"></i>
         </div>
         <i class="fas fa-plus"></i>

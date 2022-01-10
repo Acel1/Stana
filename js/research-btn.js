@@ -1,4 +1,4 @@
-document.getElementById("research-form__btn").addEventListener("click", function () {
+document.getElementById("research-form-btn").addEventListener("click", function () {
   document.getElementById("main-nav").style.display = "none";
   document.getElementById("research-form").style.display = "block";
 });
