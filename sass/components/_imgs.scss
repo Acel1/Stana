@@ -4,6 +4,16 @@
   padding: 0.2rem;
 }
 
-.profile-picture-img {
-  width: 37px;
+.user-nav__profile-list {
+  display: flex;
+  align-items: center;
+  a {
+    display: block;
+    align-items: center;
+    img {
+      width: 35px;
+      border: transparent solid 1px;
+      border-radius: 2rem;
+    }
+  }
 }

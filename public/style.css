@@ -15,11 +15,24 @@ a {
   text-decoration: none;
 }
 
+.btn-header {
+  border: none;
+  height: 100%;
+  font-size: 1.1rem;
+}
+
 .dropdown {
   padding: 0 1rem;
+  font-size: 1.1rem;
 }
-.dropdown i {
+.dropdown a {
+  color: #636363;
+}
+.dropdown a i {
   padding-left: 0.5rem;
+}
+.dropdown--strong {
+  color: black;
 }
 
 .main-logo {
@@ -28,8 +41,18 @@ a {
   padding: 0.2rem;
 }
 
-.profile-picture-img {
-  width: 37px;
+.user-nav__profile-list {
+  display: flex;
+  align-items: center;
+}
+.user-nav__profile-list a {
+  display: block;
+  align-items: center;
+}
+.user-nav__profile-list a img {
+  width: 35px;
+  border: transparent solid 1px;
+  border-radius: 2rem;
 }
 
 .header {
