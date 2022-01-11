@@ -1,15 +1,15 @@
 //---utils---//
-@import "./utils/variables";
-@import "./utils/mixins";
+@import "./1.utils/variables";
+@import "./1.utils/mixins";
 
 //---base---//
-@import "./base/fonts";
-@import "./base/base";
+@import "./2.base/fonts";
+@import "./2.base/base";
 
 //---components---//
-@import "./components/buttons";
-@import "./components/dropdowns";
-@import "./components/imgs";
+@import "./3.components/buttons";
+@import "./3.components/dropdowns";
+@import "./3.components/imgs";
 
 //---layout---//
-@import "./layout/header";
+@import "./4.layout/header";
