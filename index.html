@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
 
-    <title>Stava</title>
+    <title>Stana</title>
   </head>
   <body>
     <header class="header">
@@ -89,73 +89,98 @@
         </div>
       </div>
       <div class="user-stats">
-        <button class="user-stats__sport-box">
+        <!--TOTAL category-->
+        <button class="user-stats__select-btn"><i class="far fa-chart-bar"></i></button>
+        <div class="user-stats__sport-box">
+          <button class="user-stats__set-goal"></button>
           <div class="week-stats">
-            <h2 class="week-stats__title"></h2>
+            <h2 class="week-stats__heading"></h2>
             <p class="week-stats__distance"></p>
-            <div class="week-stats__graph"></div>
+            <div class="week-stats__graph">
+              <div></div>
+              <i class="far fa-chart-bar"></i>
+            </div>
             <p class="week-stats__time"></p>
             <p class="week-stats__elevation"></p>
           </div>
           <div class="year-stats">
-            <h2 class="year-stats__title"></h2>
+            <h2 class="year-stats__heading"></h2>
             <p class="year-stats__distance"></p>
             <div class="year-stats__graph"></div>
           </div>
-        </button>
-        <button class="user-stats__sport-box">
+        </div>
+        <!--WHEELCHAIR category-->
+        <button class="user-stats__select-btn"><i class="fab fa-accessible-icon"></i></button>
+        <div class="user-stats__sport-box">
+          <button class="user-stats__set-goal"></button>
           <div class="week-stats">
-            <h2 class="week-stats__title"></h2>
+            <h2 class="week-stats__heading"></h2>
             <p class="week-stats__distance"></p>
-            <div class="week-stats__graph"></div>
+            <div class="week-stats__graph">
+              <div></div>
+              <i class="fab fa-accessible-icon"></i>
+            </div>
             <p class="week-stats__time"></p>
             <p class="week-stats__elevation"></p>
           </div>
           <div class="year-stats">
-            <h2 class="year-stats__title"></h2>
+            <h2 class="year-stats__heading"></h2>
             <p class="year-stats__distance"></p>
             <div class="year-stats__graph"></div>
           </div>
-        </button>
-        <button class="user-stats__sport-box">
+        </div>
+        <!--HIKING category-->
+        <button class="user-stats__select-btn"><i class="fas fa-hiking"></i></button>
+        <div class="user-stats__sport-box">
+          <button class="user-stats__set-goal"></button>
           <div class="week-stats">
-            <h2 class="week-stats__title"></h2>
+            <h2 class="week-stats__heading"></h2>
             <p class="week-stats__distance"></p>
-            <div class="week-stats__graph"></div>
+            <div class="week-stats__graph">
+              <div></div>
+              <i class="fas fa-hiking"></i>
+            </div>
             <p class="week-stats__time"></p>
             <p class="week-stats__elevation"></p>
           </div>
           <div class="year-stats">
-            <h2 class="year-stats__title"></h2>
+            <h2 class="year-stats__heading"></h2>
             <p class="year-stats__distance"></p>
             <div class="year-stats__graph"></div>
           </div>
-        </button>
-        <button class="user-stats__sport-box">
+        </div>
+        <!--CHESS category-->
+        <button class="user-stats__select-btn"><i class="fas fa-chess"></i></button>
+        <div class="user-stats__sport-box">
+          <button class="user-stats__set-goal"></button>
           <div class="week-stats">
-            <h2 class="week-stats__title"></h2>
+            <h2 class="week-stats__heading"></h2>
             <p class="week-stats__distance"></p>
-            <div class="week-stats__graph"></div>
+            <div class="week-stats__graph">
+              <div></div>
+              <i class="fas fa-chess"></i>
+            </div>
             <p class="week-stats__time"></p>
             <p class="week-stats__elevation"></p>
           </div>
           <div class="year-stats">
-            <h2 class="year-stats__title"></h2>
+            <h2 class="year-stats__heading"></h2>
             <p class="year-stats__distance"></p>
             <div class="year-stats__graph"></div>
           </div>
-        </button>
-        <div class="user-stats__goal"></div>
+        </div>
+        <div class="user-stats__goal"><i class="fas fa-chevron-right"></i></div>
       </div>
     </section>
     <section id="feed">
       <nav class="nav">
-        <button class="nav__dropdown">
+        <button class="nav__list-btn"><i class="fas fa-chevron-right"></i></button>
+        <ul class="nav__dropdown">
           <li class="nav__li"><a href=""></a></li>
           <li class="nav__li"><a href=""></a></li>
           <li class="nav__li"><a href=""></a></li>
           <li class="nav__li"><a href=""></a></li>
-        </button>
+        </ul>
       </nav>
       <article class="cards">
         <div class="card">
@@ -169,7 +194,7 @@
               </div>
             </div>
             <div class="card__name">
-              <i></i>
+              <i class="fas fa-hiking"></i>
               <h1></h1>
             </div>
             <div class="card__data">
@@ -189,21 +214,98 @@
             <div class="card__map"></div>
             <div class="card__social">
               <div class="card__kudos"></div>
-              <button class="card__kudo-btn"></button>
-              <button class="card__comment-btn"></button>
+              <button class="card__kudo-btn"><i class="far fa-thumbs-up"></i></button>
+              <button class="card__comment-btn"><i class="far fa-comment-alt"></i></button>
             </div>
           </a>
         </div>
       </article>
     </section>
     <section id="right-side">
-      <div class="challenges"></div>
-      <div class="clubs"></div>
-      <div class="info-confidentialité"></div>
-      <div class="contact-suggest"></div>
-      <div class="side-footer"></div>
+      <div class="challenges">
+        <i class="fas fa-medal"></i>
+        <h2 class="challenges__heading"></h2>
+        <p class="challenges__text"></p>
+        <a class="challenges__link" href=""></a>
+      </div>
+      <div class="clubs">
+        <h2 class="clubs__heading"></h2>
+        <div class="clubs__cards">
+          <div class="clubs__card">
+            <a href=""><img src="" alt="" /></a>
+          </div>
+          <div class="clubs__card">
+            <a href=""><img src="" alt="" /></a>
+          </div>
+          <div class="clubs__card">
+            <a href=""><img src="" alt="" /></a>
+          </div>
+          <div class="clubs__card">
+            <a href=""><img src="" alt="" /></a>
+          </div>
+          <div class="clubs__card">
+            <a href=""><img src="" alt="" /></a>
+          </div>
+          <div class="clubs__card">
+            <a href=""><img src="" alt="" /></a>
+          </div>
+          <div class="clubs__card">
+            <a href=""><img src="" alt="" /></a>
+          </div>
+        </div>
+        <a href=""></a>
+      </div>
+      <div class="tip-box">
+        <i class="far fa-eye"></i>
+        <h2 class="tip-box__heading"></h2>
+        <p class="tip-box__text"></p>
+        <a class="tip-box__link" href=""></a>
+      </div>
+      <div class="contact-suggest">
+        <h2 class="contact-suggest__heading"></h2>
+        <div class="contact-suggest__cards">
+          <div class="contact-suggest__card">
+            <img class="contact-suggest__pp" src="" alt="" />
+            <h3 class="contact-suggest__name"></h3>
+            <h4 class="contact-suggest__place"></h4>
+            <button class="contact-suggest__sub"></button>
+          </div>
+          <div class="contact-suggest__card">
+            <img class="contact-suggest__pp" src="" alt="" />
+            <h3 class="contact-suggest__name"></h3>
+            <h4 class="contact-suggest__place"></h4>
+            <button class="contact-suggest__sub"></button>
+          </div>
+          <div class="contact-suggest__card">
+            <img class="contact-suggest__pp" src="" alt="" />
+            <h3 class="contact-suggest__name"></h3>
+            <h4 class="contact-suggest__place"></h4>
+            <button class="contact-suggest__sub"></button>
+          </div>
+        </div>
+        <a class="contact-suggest__link" href=""></a>
+      </div>
     </section>
-    <footer id="footer"></footer>
+    <footer id="footer">
+      <ul class="footer__links">
+        <li class="footer__link"><a href=""></a></li>
+        <li class="footer__link"><a href=""></a></li>
+        <li class="footer__link"><a href=""></a></li>
+        <li class="footer__link"><a href=""></a></li>
+      </ul>
+      <ul class="footer__dropdowns">
+        <li class="footer__dropdown">
+          <button><i class="fas fa-angle-down"></i></button>
+        </li>
+        <li class="footer__dropdown">
+          <button><i class="fas fa-angle-down"></i></button>
+        </li>
+        <li class="footer__dropdown">
+          <button><i class="fas fa-angle-down"></i></button>
+        </li>
+      </ul>
+      <p class="footer__copyright"><i class="far fa-copyright"></i></p>
+    </footer>
 
     <script src="./js/research-btn.js"></script>
   </body>
