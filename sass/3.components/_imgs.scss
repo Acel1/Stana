@@ -1,9 +1,12 @@
-.main-logo {
+.header__logo {
   float: left;
   margin: 0 1rem;
   padding: 0.2rem;
 }
 
+img {
+  width: 100%;
+}
 .user-nav__profile-list {
   display: flex;
   align-items: center;

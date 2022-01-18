@@ -6,8 +6,7 @@
 #research-form {
   display: none;
 }
-
-#main-nav {
+.header__left-nav {
   height: 100%;
   float: left;
   display: flex;
@@ -15,7 +14,7 @@
   // width: 35%;
 }
 
-#user-nav {
+.header__right-nav {
   height: 100%;
   float: right;
   display: flex;

@@ -17,27 +17,41 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html"><img class="main-logo" src="public/image/img-stava.png" alt="main-logo" /></a>
-      <nav id="main-nav">
-        <button class="btn-header" id="research-form-btn"><i class="fas fa-search"></i></button>
-        <ul class="dropdown dropdown--strong">
-          <a href=""> Tableau de bord<i class="fas fa-angle-down"></i></a>
+      <figure class="header__logo">
+        <a href="index.html"><img src="public/image/img-stava.png" alt="main-logo" /></a>
+      </figure>
+      <nav class="header__left-nav">
+        <button class="header__btn" id="research-form-btn"><i class="fas fa-search"></i></button>
+        <ul class="header-dropdown">
+          <li class="header-dropdown__main">
+            <a href="#" class="main-menu-hover">Tableau de bord<i class="fas fa-angle-down"></i></a>
+          </li>
+          <li class="header-dropdown__sub"><a href="#">Flux d'activités</a></li>
+          <li class="header-dropdown__sub"><a href="#">Mes segments</a></li>
+          <li class="header-dropdown__sub"><a href="#">Mes itinéraires</a></li>
         </ul>
-        <ul class="dropdown">
-          <a href="">Entraînement<i class="fas fa-angle-down"></i></a>
+        <ul class="header-dropdown">
+          <li class="header-dropdown__main">
+            <a href="#">Entraînement<i class="fas fa-angle-down"></i></a>
+          </li>
+          <li class="header-dropdown__sub"><a href="#">Calendrier</a></li>
+          <li class="header-dropdown__sub"><a href="#">Mes activités</a></li>
         </ul>
-        <ul class="dropdown">
-          <a href=""> Explorer<i class="fas fa-angle-down"></i></a>
+        <ul class="header-dropdown">
+          <li class="header-dropdown__main">
+            <a href="#">Explorer<i class="fas fa-angle-down"></i></a>
+          </li>
+          <li class="header-dropdown__sub"><a href="#">Explorateur de segments</a></li>
+          <li class="header-dropdown__sub"><a href="#">Recherche de segments</a></li>
+          <li class="header-dropdown__sub"><a href="#">Recherche d'athlètes</a></li>
+          <li class="header-dropdown__sub"><a href="#">Clubs</a></li>
         </ul>
-
-        <button class="btn-header">
-          <a href="">Challenges</a>
+        <button class="header__btn">
+          <a href="#">Challenges</a>
         </button>
-      </nav>
-      <form id="research-form">
-        <div class="research-form-group">
-          <button class="research-form-group__btn btn-header">Athlètes<i class="fas fa-angle-down"></i></button>
-          <ul class="research-form-group__ul dropdown">
+        <form class="header__form">
+          <button class="header__btn">Athlètes<i class="fas fa-angle-down"></i></button>
+          <ul class="header__form-list">
             <li>Activités</li>
             <li>Athlètes</li>
             <li>Clubs</li>
@@ -46,9 +60,9 @@
           <input type="text" name="" class="" />
           <button class="btn-header"><i class="fas fa-search"></i></button>
           <button class="btn-header" id="esc-nav-form"><i class="fas fa-times"></i></button>
-        </div>
-      </form>
-      <nav id="user-nav">
+        </form>
+      </nav>
+      <nav class="header__right-nav">
         <button class="subscribe-btn btn-header">Offrir un abonnement</button>
         <button class="notification-bell btn-header"><i class="far fa-bell"></i></button>
         <ul></ul>
@@ -89,8 +103,13 @@
         </div>
       </div>
       <div class="user-stats">
+        <div class="user-stats__slct-btns">
+          <button class="user-stats__slct-btn"><i class="far fa-chart-bar"></i></button>
+          <button class="user-stats__slct-btn"><i class="fas fa-bicycle"></i></button>
+          <button class="user-stats__slct-btn"><i class="fas fa-hiking"></i></button>
+          <button class="user-stats__slct-btn"><i class="fas fa-chess"></i></button>
+        </div>
         <!--TOTAL category-->
-        <button class="user-stats__select-btn"><i class="far fa-chart-bar"></i></button>
         <div class="user-stats__sport-box">
           <button class="user-stats__set-goal"></button>
           <div class="week-stats">
@@ -110,7 +129,7 @@
           </div>
         </div>
         <!--BIKE category-->
-        <button class="user-stats__select-btn"><i class="fas fa-bicycle"></i></button>
+
         <div class="user-stats__sport-box">
           <button class="user-stats__set-goal"><i class="fas fa-pencil-alt"></i></button>
           <div class="week-stats">
@@ -130,7 +149,7 @@
           </div>
         </div>
         <!--HIKING category-->
-        <button class="user-stats__select-btn"><i class="fas fa-hiking"></i></button>
+
         <div class="user-stats__sport-box">
           <button class="user-stats__set-goal"></button>
           <div class="week-stats">
@@ -150,7 +169,7 @@
           </div>
         </div>
         <!--CHESS category-->
-        <button class="user-stats__select-btn"><i class="fas fa-chess"></i></button>
+
         <div class="user-stats__sport-box">
           <button class="user-stats__set-goal"></button>
           <div class="week-stats">
@@ -186,7 +205,7 @@
         <div class="card">
           <a href="#">
             <div class="card__id">
-              <img class="card__pp" src="/public/image/pp-michel-duc.jpg²" alt="User profile picture" />
+              <img class="card__pp" src="/public/image/pp-michel-duc.jpg" alt="User profile picture" />
               <h2 class="card__user-name">Michel DUC</h2>
               <div class="card__date-place">
                 <p class="card__date">Aujourd'hui à 10:16 -</p>
