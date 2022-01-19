@@ -21,57 +21,59 @@
         <a href="index.html"><img src="public/image/img-stava.png" alt="main-logo" /></a>
       </figure>
       <nav class="header__left-nav">
-        <button class="header__btn" id="research-form-btn"><i class="fas fa-search"></i></button>
-        <ul class="header-dropdown">
-          <li class="header-dropdown__main">
-            <a href="#" class="main-menu-hover">Tableau de bord<i class="fas fa-angle-down"></i></a>
-          </li>
-          <li class="header-dropdown__sub"><a href="#">Flux d'activités</a></li>
-          <li class="header-dropdown__sub"><a href="#">Mes segments</a></li>
-          <li class="header-dropdown__sub"><a href="#">Mes itinéraires</a></li>
-        </ul>
-        <ul class="header-dropdown">
-          <li class="header-dropdown__main">
-            <a href="#">Entraînement<i class="fas fa-angle-down"></i></a>
-          </li>
-          <li class="header-dropdown__sub"><a href="#">Calendrier</a></li>
-          <li class="header-dropdown__sub"><a href="#">Mes activités</a></li>
-        </ul>
-        <ul class="header-dropdown">
-          <li class="header-dropdown__main">
-            <a href="#">Explorer<i class="fas fa-angle-down"></i></a>
-          </li>
-          <li class="header-dropdown__sub"><a href="#">Explorateur de segments</a></li>
-          <li class="header-dropdown__sub"><a href="#">Recherche de segments</a></li>
-          <li class="header-dropdown__sub"><a href="#">Recherche d'athlètes</a></li>
-          <li class="header-dropdown__sub"><a href="#">Clubs</a></li>
-        </ul>
-        <button class="header__btn">
-          <a href="#">Challenges</a>
-        </button>
+        <div>
+          <button class="header__btn-form"><i class="fas fa-search"></i></button>
+        </div>
+        <div>
+          <div class="dropdown">
+            <a href="#" class="btn">Tableau de bord<i class="fas fa-angle-down"></i></a>
+            <ul class="dropdown__sub">
+              <li class="btn"><a href="#">Mes segments</a></li>
+              <li class="btn"><a href="#">Mes itinéraires</a></li>
+              <li class="btn"><a href="#">Flux d'activités</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="btn">Entraînement<i class="fas fa-angle-down"></i></a>
+            <ul class="dropdown__sub">
+              <li class="btn"><a href="#">Calendrier</a></li>
+              <li class="btn"><a href="#">Mes activités</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="btn">Explorer<i class="fas fa-angle-down"></i></a>
+            <ul class="dropdown__sub">
+              <li class="btn"><a href="#">Explorateur de segments</a></li>
+              <li class="btn"><a href="#">Recherche de segments</a></li>
+              <li class="btn"><a href="#">Recherche d'athlètes</a></li>
+              <li class="btn"><a href="#">Clubs</a></li>
+            </ul>
+          </div>
+          <button class="btn">
+            <a href="#">Challenges</a>
+          </button>
+        </div>
         <form class="header__form">
-          <button class="header__btn">Athlètes<i class="fas fa-angle-down"></i></button>
+          <button class="btn">Athlètes<i class="fas fa-angle-down"></i></button>
           <ul class="header__form-list">
-            <li>Activités</li>
-            <li>Athlètes</li>
-            <li>Clubs</li>
-            <li>Segments</li>
+            <li class="btn">Activités</li>
+            <li class="btn">Athlètes</li>
+            <li class="btn">Clubs</li>
+            <li class="btn">Segments</li>
           </ul>
           <input type="text" name="" class="" />
-          <button class="btn-header"><i class="fas fa-search"></i></button>
-          <button class="btn-header" id="esc-nav-form"><i class="fas fa-times"></i></button>
+          <button class="btn"><i class="fas fa-search"></i></button>
+          <button class="btn" id="esc-nav-form"><i class="fas fa-times"></i></button>
         </form>
       </nav>
       <nav class="header__right-nav">
-        <button class="subscribe-btn btn-header">Offrir un abonnement</button>
-        <button class="notification-bell btn-header"><i class="far fa-bell"></i></button>
+        <button class="subscribe-btn btn">Offrir un abonnement</button>
+        <button class="notification-bell btn"><i class="far fa-bell"></i></button>
         <ul></ul>
         <ul class="user-nav__profile-list dropdown">
-          <a href="#"><img src="public/image/profile-picture.jpg" alt="" /> </a>
-
-          <i class="fas fa-angle-down"></i>
+          <a href="#" class="btn"><img src="public/image/profile-picture.jpg" alt="" /><i class="fas fa-angle-down"></i> </a>
         </ul>
-        <button class="btn-header"><i class="fas fa-plus"></i></button>
+        <button class="btn"><i class="fas fa-plus"></i></button>
       </nav>
     </header>
     <section id="left-side">

@@ -21,7 +21,7 @@ body {
   justify-content: space-around;
 }
 
-.btn-header {
+.btn {
   border: none;
   height: 100%;
   font-size: 1rem;
@@ -41,21 +41,18 @@ body {
   color: black;
 }
 
-.main-menu-hover {
-  display: block;
+.dropdown__sub {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  background-color: white;
 }
-.main-menu-hover:hover {
-  color: #1b4ee4;
+.dropdown:hover .dropdown__sub {
+  display: flex;
 }
 
-.sub-menu-hover {
+.header__form {
   display: none;
-}
-.sub-menu-hover--visible {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  align-items: center;
 }
 
 .header__logo {

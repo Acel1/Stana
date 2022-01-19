@@ -1,5 +1,37 @@
-.btn-header {
+.btn {
   border: none;
   height: 100%;
   font-size: $medium;
+}
+
+.dropdown {
+  padding: 0 1rem;
+  font-size: $medium;
+
+  a {
+    color: $component-color;
+
+    i {
+      padding-left: 0.5rem;
+    }
+  }
+  &--strong {
+    color: black; // !  priorité sur '.dropdown a' donc texte passe pas en noir  ! //
+  }
+}
+
+.dropdown {
+  &__sub {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+  }
+  &:hover .dropdown__sub {
+    display: flex;
+  }
+}
+
+.header__form {
+  display: none;
 }
