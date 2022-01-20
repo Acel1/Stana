@@ -2,22 +2,24 @@
   height: $height-header;
   width: 100%;
   background-color: rgba(231, 146, 85, 0.719);
-}
-#research-form {
-  display: none;
-}
-.header__left-nav {
-  height: 100%;
-  float: left;
-  display: flex;
-  align-items: center;
-  // width: 35%;
-}
 
-.header__right-nav {
-  height: 100%;
-  float: right;
-  display: flex;
-  align-items: center;
-  // width: 30%;
+  &__left-nav {
+    height: 100%;
+    float: left;
+    display: none;
+    align-items: center;
+    // width: 35%;
+  }
+
+  &__dropdowns {
+    display: flex;
+  }
+
+  &__right-nav {
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+    // width: 30%;
+  }
 }

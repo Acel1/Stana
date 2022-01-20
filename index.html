@@ -20,51 +20,35 @@
       <figure class="header__logo">
         <a href="index.html"><img src="public/image/img-stava.png" alt="main-logo" /></a>
       </figure>
-      <nav class="header__left-nav">
-        <div>
-          <button class="header__btn-form"><i class="fas fa-search"></i></button>
-        </div>
-        <div>
-          <div class="dropdown">
-            <a href="#" class="btn">Tableau de bord<i class="fas fa-angle-down"></i></a>
-            <ul class="dropdown__sub">
-              <li class="btn"><a href="#">Mes segments</a></li>
-              <li class="btn"><a href="#">Mes itinéraires</a></li>
-              <li class="btn"><a href="#">Flux d'activités</a></li>
-            </ul>
-          </div>
-          <div class="dropdown">
-            <a href="#" class="btn">Entraînement<i class="fas fa-angle-down"></i></a>
-            <ul class="dropdown__sub">
-              <li class="btn"><a href="#">Calendrier</a></li>
-              <li class="btn"><a href="#">Mes activités</a></li>
-            </ul>
-          </div>
-          <div class="dropdown">
-            <a href="#" class="btn">Explorer<i class="fas fa-angle-down"></i></a>
-            <ul class="dropdown__sub">
-              <li class="btn"><a href="#">Explorateur de segments</a></li>
-              <li class="btn"><a href="#">Recherche de segments</a></li>
-              <li class="btn"><a href="#">Recherche d'athlètes</a></li>
-              <li class="btn"><a href="#">Clubs</a></li>
-            </ul>
-          </div>
-          <button class="btn">
-            <a href="#">Challenges</a>
-          </button>
-        </div>
-        <form class="header__form">
-          <button class="btn">Athlètes<i class="fas fa-angle-down"></i></button>
-          <ul class="header__form-list">
-            <li class="btn">Activités</li>
-            <li class="btn">Athlètes</li>
-            <li class="btn">Clubs</li>
-            <li class="btn">Segments</li>
+      <nav class="header__left-nav" id="left-nav">
+        <button class="form__btn" id="form-btn" type="button"><i class="fas fa-search"></i></button>
+        <div class="dropdown">
+          <a href="#" class="btn">Tableau de bord<i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown__sub">
+            <li class="btn"><a href="#">Mes segments</a></li>
+            <li class="btn"><a href="#">Mes itinéraires</a></li>
+            <li class="btn"><a href="#">Flux d'activités</a></li>
           </ul>
-          <input type="text" name="" class="" />
-          <button class="btn"><i class="fas fa-search"></i></button>
-          <button class="btn" id="esc-nav-form"><i class="fas fa-times"></i></button>
-        </form>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="btn">Entraînement<i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown__sub">
+            <li class="btn"><a href="#">Calendrier</a></li>
+            <li class="btn"><a href="#">Mes activités</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="btn">Explorer<i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown__sub">
+            <li class="btn"><a href="#">Explorateur de segments</a></li>
+            <li class="btn"><a href="#">Recherche de segments</a></li>
+            <li class="btn"><a href="#">Recherche d'athlètes</a></li>
+            <li class="btn"><a href="#">Clubs</a></li>
+          </ul>
+        </div>
+        <button class="btn">
+          <a href="#">Challenges</a>
+        </button>
       </nav>
       <nav class="header__right-nav">
         <button class="subscribe-btn btn">Offrir un abonnement</button>
@@ -75,6 +59,19 @@
         </ul>
         <button class="btn"><i class="fas fa-plus"></i></button>
       </nav>
+      <form class="form__container" id="form-container">
+        <select name="type" id="type">
+          <option value="activités">Activités</option>
+          <option value="athlètes" selected>Athlètes</option>
+          <option value="clubs">Clubs</option>
+          <option value="segments">Segments</option>
+        </select>
+        <fieldset>
+          <input type="text" name="" class="" />
+          <button class="btn"><i class="fas fa-search"></i></button>
+        </fieldset>
+        <button class="btn" id="esc-nav-form"><i class="fas fa-times"></i></button>
+      </form>
     </header>
     <section id="left-side">
       <div class="user-info">
@@ -348,6 +345,6 @@
       <p class="footer__copyright"><i class="far fa-copyright">2021 Stana</i></p>
     </footer>
 
-    <script src="./js/research-btn.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

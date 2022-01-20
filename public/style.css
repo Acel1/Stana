@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
-body {
+* {
   font-family: "Lato", sans-serif;
 }
 
@@ -23,22 +23,9 @@ body {
 
 .btn {
   border: none;
-  height: 100%;
-  font-size: 1rem;
-}
-
-.dropdown {
   padding: 0 1rem;
-  font-size: 1rem;
-}
-.dropdown a {
-  color: #636363;
-}
-.dropdown a i {
-  padding-left: 0.5rem;
-}
-.dropdown--strong {
-  color: black;
+  font-size: 1.1rem;
+  background: none;
 }
 
 .dropdown__sub {
@@ -51,8 +38,9 @@ body {
   display: flex;
 }
 
-.header__form {
-  display: none;
+.form__container {
+  display: flex;
+  background-color: #fdd465;
 }
 
 .header__logo {
@@ -88,18 +76,15 @@ h2 {
   width: 100%;
   background-color: rgba(231, 146, 85, 0.719);
 }
-
-#research-form {
-  display: none;
-}
-
 .header__left-nav {
   height: 100%;
   float: left;
-  display: flex;
+  display: none;
   align-items: center;
 }
-
+.header__dropdowns {
+  display: flex;
+}
 .header__right-nav {
   height: 100%;
   float: right;

@@ -1,23 +1,8 @@
 .btn {
   border: none;
-  height: 100%;
-  font-size: $medium;
-}
-
-.dropdown {
   padding: 0 1rem;
-  font-size: $medium;
-
-  a {
-    color: $component-color;
-
-    i {
-      padding-left: 0.5rem;
-    }
-  }
-  &--strong {
-    color: black; // !  priorité sur '.dropdown a' donc texte passe pas en noir  ! //
-  }
+  font-size: $Large;
+  background: none;
 }
 
 .dropdown {
@@ -32,6 +17,7 @@
   }
 }
 
-.header__form {
-  display: none;
+.form__container {
+  display: flex;
+  background-color: rgb(253, 212, 101);
 }
