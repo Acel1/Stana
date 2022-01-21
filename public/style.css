@@ -24,29 +24,46 @@ body {
 .btn {
   border: none;
   padding: 0 1rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   background: none;
+  cursor: pointer;
+}
+.btn--bg {
+  background-color: #1b4ee4;
+  color: #f7f7fa;
 }
 
+.dropdown i {
+  margin-left: 12px;
+}
 .dropdown__sub {
-  position: absolute;
   display: none;
+  position: absolute;
+  justify-content: space-between;
+  padding: 0 2rem 0 0;
+  top: 60px;
   flex-direction: column;
   background-color: white;
 }
+.dropdown__sub li {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
 .dropdown:hover .dropdown__sub {
-  display: flex;
+  display: block;
 }
 
-.form__container {
+.form__text-field {
   display: flex;
-  background-color: #fdd465;
+  align-items: center;
+  background: white;
+  border: #dfdfe8 2px solid;
 }
-
-.header__logo {
-  float: left;
-  margin: 0 1rem;
-  padding: 0.2rem;
+.form__input {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
 }
 
 img {
@@ -72,44 +89,63 @@ h2 {
 }
 
 .header {
-  height: 40px;
+  height: 60px;
   width: 100%;
   background-color: rgba(231, 146, 85, 0.719);
+  margin-bottom: 2rem;
+}
+.header__logo {
+  float: left;
+  width: 6%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header__left-nav {
   height: 100%;
+  width: 40%;
   float: left;
-  display: none;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .header__dropdowns {
   display: flex;
 }
+.header__form {
+  display: none;
+  background-color: #fdd465;
+  height: 100%;
+}
 .header__right-nav {
   height: 100%;
+  width: 30%;
   float: right;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-#left-side {
+.left-side {
   width: 20%;
   background-color: burlywood;
 }
-#left-side .user-info {
+.left-side .user-info {
   display: flex;
   flex-direction: column;
+  padding: 0 1rem;
 }
-#left-side .user-info__heading {
+.left-side .user-info__heading {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#left-side .user-info__social {
+.left-side .user-info__social {
   display: flex;
   justify-content: space-around;
 }
-#left-side .user-stats__slct-btns {
+.left-side .user-stats__slct-btns {
   display: flex;
 }
 #feed {

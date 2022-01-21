@@ -1,23 +1,50 @@
 .btn {
   border: none;
   padding: 0 1rem;
-  font-size: $Large;
+  font-size: $font-large;
   background: none;
+  cursor: pointer;
+  &--bg {
+    background-color: $color-main;
+    color: $color-main-white;
+  }
 }
 
 .dropdown {
+  i {
+    margin-left: 12px;
+  }
   &__sub {
-    position: absolute;
     display: none;
+    position: absolute;
+    justify-content: space-between;
+    padding: 0 2rem 0 0;
+    top: $height-header;
     flex-direction: column;
     background-color: white;
+    li {
+      height: $height-header;
+      display: flex;
+      align-items: center;
+    }
   }
   &:hover .dropdown__sub {
-    display: flex;
+    display: block;
   }
 }
 
-.form__container {
-  display: flex;
-  background-color: rgb(253, 212, 101);
+.form {
+  &__list {
+  }
+  &__text-field {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: $color-component 2px solid;
+  }
+  &__input {
+    border: none;
+    background: none;
+    font-size: $font-large;
+  }
 }

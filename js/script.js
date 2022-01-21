@@ -1,3 +1,4 @@
+//HEADER FORM
 //--form btn makes appear form container and hide whole left nav
 
 let formBtn = document.getElementById("form-btn");
@@ -11,10 +12,11 @@ formBtn.addEventListener("click", function () {
   form.style.display = "flex";
 });
 
-let formListBtn = document.getElementById("form-list-btn");
+//--esc form
 
-let formList = document.getElementById("form-list");
+let formEscBtn = document.getElementById("esc-nav-form");
 
-formListBtn.addEventListener("click", function () {
-  formList.style.display = "flex";
+formEscBtn.addEventListener("click", function () {
+  form.style.display = "none";
+  leftNav.style.display = "flex";
 });

@@ -1,10 +1,11 @@
-#left-side {
+.left-side {
   width: 20%;
   background-color: burlywood;
 
   .user-info {
     display: flex;
     flex-direction: column;
+    padding: 0 1rem;
     &__heading {
       display: flex;
       flex-direction: column;

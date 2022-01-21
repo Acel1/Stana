@@ -21,7 +21,7 @@
         <a href="index.html"><img src="public/image/img-stava.png" alt="main-logo" /></a>
       </figure>
       <nav class="header__left-nav" id="left-nav">
-        <button class="form__btn" id="form-btn" type="button"><i class="fas fa-search"></i></button>
+        <button class="btn" id="form-btn"><i class="fas fa-search"></i></button>
         <div class="dropdown">
           <a href="#" class="btn">Tableau de bord<i class="fas fa-angle-down"></i></a>
           <ul class="dropdown__sub">
@@ -46,12 +46,10 @@
             <li class="btn"><a href="#">Clubs</a></li>
           </ul>
         </div>
-        <button class="btn">
-          <a href="#">Challenges</a>
-        </button>
+        <button class="btn btn--bg">Challenges</button>
       </nav>
       <nav class="header__right-nav">
-        <button class="subscribe-btn btn">Offrir un abonnement</button>
+        <button class="btn btn--bg">Offrir un abonnement</button>
         <button class="notification-bell btn"><i class="far fa-bell"></i></button>
         <ul></ul>
         <ul class="user-nav__profile-list dropdown">
@@ -59,21 +57,21 @@
         </ul>
         <button class="btn"><i class="fas fa-plus"></i></button>
       </nav>
-      <form class="form__container" id="form-container">
-        <select name="type" id="type">
-          <option value="activités">Activités</option>
-          <option value="athlètes" selected>Athlètes</option>
-          <option value="clubs">Clubs</option>
-          <option value="segments">Segments</option>
+      <form class="header__form form" id="form-container">
+        <select class="form__list btn" name="type" id="type">
+          <option class="btn" value="activités">Activités</option>
+          <option class="btn" value="athlètes" selected>Athlètes</option>
+          <option class="btn" value="clubs">Clubs</option>
+          <option class="btn" value="segments">Segments</option>
         </select>
-        <fieldset>
-          <input type="text" name="" class="" />
-          <button class="btn"><i class="fas fa-search"></i></button>
-        </fieldset>
+        <div class="form__text-field">
+          <input type="text" name="research" class="form__input" placeholder="Rechercher" />
+          <button class="btn form__input-btn"><i class="fas fa-search"></i></button>
+        </div>
         <button class="btn" id="esc-nav-form"><i class="fas fa-times"></i></button>
       </form>
     </header>
-    <section id="left-side">
+    <section class="left-side">
       <div class="user-info">
         <div class="user-info__heading">
           <figure class="user-info__pp"><img class="user-info__img" src="/public/image/profile-picture.jpg" alt="profile picture" /></figure>

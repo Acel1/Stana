@@ -2,12 +2,23 @@
   height: $height-header;
   width: 100%;
   background-color: rgba(231, 146, 85, 0.719);
+  margin-bottom: 2rem;
+  &__logo {
+    float: left;
+    width: 6%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   &__left-nav {
     height: 100%;
+    width: 40%;
     float: left;
-    display: none;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     // width: 35%;
   }
 
@@ -15,11 +26,19 @@
     display: flex;
   }
 
+  &__form {
+    display: none;
+    background-color: rgb(253, 212, 101);
+    height: 100%;
+  }
+
   &__right-nav {
     height: 100%;
+    width: 30%;
     float: right;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     // width: 30%;
   }
 }
