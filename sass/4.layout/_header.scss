@@ -14,7 +14,7 @@
 
   &__left-nav {
     height: 100%;
-    width: 40%;
+    width: 45%;
     float: left;
     display: flex;
     align-items: center;
@@ -40,5 +40,8 @@
     align-items: center;
     justify-content: space-between;
     // width: 30%;
+  }
+
+  &__user {
   }
 }

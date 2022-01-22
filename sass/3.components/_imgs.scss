@@ -1,12 +1,9 @@
 img {
   width: 100%;
 }
-.user-nav__profile-list {
-  display: flex;
-  align-items: center;
+.header__user {
   a {
-    display: block;
-    align-items: center;
+    display: contents;
     img {
       width: 35px;
       border: transparent solid 1px;

@@ -1,12 +1,23 @@
 .btn {
-  border: none;
+  height: $height-header;
+  display: flex;
+  align-items: center;
   padding: 0 1rem;
-  font-size: $font-large;
+  border: none;
   background: none;
+  font-size: $font-large;
   cursor: pointer;
+
+  a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
   &--bg {
     background-color: $color-main;
     color: $color-main-white;
+    height: auto;
+    padding: 0.3rem 1rem;
   }
 }
 
