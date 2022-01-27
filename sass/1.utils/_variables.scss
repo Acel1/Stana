@@ -1,7 +1,8 @@
 //---COLORS---//
 $color-main: #1b4ee4;
 $color-main-white: #f7f7fa;
-$color-component: #dfdfe8;
+$color-hover: rgb(243, 243, 243);
+$color-component: rgb(187, 187, 187);
 $color-stats: #79d7bd;
 
 //---DIMENSIONS---//
@@ -12,3 +13,7 @@ $height-header: 60px;
 $font-medium: 1rem;
 $font-large: 1.2rem;
 $font-xl: 1.5rem;
+
+//---BORDERS---//
+
+$border-main: darken($color-main-white, 5%);

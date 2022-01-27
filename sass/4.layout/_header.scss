@@ -1,8 +1,15 @@
 .header {
-  height: $height-header;
   width: 100%;
-  background-color: rgba(231, 146, 85, 0.719);
+  background-color: white;
+  border-bottom: $border-main 2px solid;
   margin-bottom: 2rem;
+  height: $height-header;
+  &__container {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+  }
+
   &__logo {
     float: left;
     width: 6%;
@@ -18,12 +25,7 @@
     float: left;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    // width: 35%;
-  }
-
-  &__dropdowns {
-    display: flex;
+    justify-content: space-around;
   }
 
   &__form {
@@ -38,10 +40,11 @@
     float: right;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     // width: 30%;
   }
 
   &__user {
+    margin: -1rem;
   }
 }

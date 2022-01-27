@@ -1,46 +1,63 @@
 .btn {
-  height: $height-header;
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
+  display: contents;
+  padding: 0 14px;
   border: none;
   background: none;
   font-size: $font-large;
+  height: 100%;
   cursor: pointer;
 
-  a {
-    display: flex;
+  &--board {
+    border-bottom: solid 2px $color-main;
+    font-weight: 500;
     height: 100%;
-    align-items: center;
   }
   &--bg {
     background-color: $color-main;
     color: $color-main-white;
+    border-radius: 0.4rem;
     height: auto;
     padding: 0.3rem 1rem;
+  }
+
+  &--hover:hover {
+    color: $color-main;
   }
 }
 
 .dropdown {
+  height: 100%;
   i {
     margin-left: 12px;
+    cursor: default;
   }
   &__sub {
     display: none;
     position: absolute;
+    min-width: 195px;
     justify-content: space-between;
-    padding: 0 2rem 0 0;
-    top: $height-header;
+    top: $height-header - 2px;
     flex-direction: column;
     background-color: white;
+    border: 2px solid $color-component;
+
     li {
       height: $height-header;
       display: flex;
       align-items: center;
+      &:hover {
+        background-color: $color-hover;
+      }
     }
   }
   &:hover .dropdown__sub {
     display: block;
+  }
+  &:hover div > * {
+    color: $color-main;
+  }
+  &:hover div {
+    border: solid 2px $color-component;
   }
 }
 

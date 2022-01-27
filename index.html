@@ -17,58 +17,71 @@
   </head>
   <body>
     <header class="header">
-      <figure class="header__logo">
-        <a href="index.html"><img src="public/image/img-stava.png" alt="main-logo" /></a>
-      </figure>
-      <nav class="header__left-nav" id="left-nav">
-        <button class="btn" id="form-btn"><i class="fas fa-search"></i></button>
-        <div class="dropdown">
-          <a href="#" class="btn">Tableau de bord<i class="fas fa-angle-down"></i></a>
-          <ul class="dropdown__sub">
-            <li class="btn"><a href="#">Mes segments</a></li>
-            <li class="btn"><a href="#">Mes itinéraires</a></li>
-            <li class="btn"><a href="#">Flux d'activités</a></li>
-          </ul>
-        </div>
-        <div class="dropdown">
-          <a href="#" class="btn">Entraînement<i class="fas fa-angle-down"></i></a>
-          <ul class="dropdown__sub">
-            <li class="btn"><a href="#">Calendrier</a></li>
-            <li class="btn"><a href="#">Mes activités</a></li>
-          </ul>
-        </div>
-        <div class="dropdown">
-          <a href="#" class="btn">Explorer<i class="fas fa-angle-down"></i></a>
-          <ul class="dropdown__sub">
-            <li class="btn"><a href="#">Explorateur de segments</a></li>
-            <li class="btn"><a href="#">Recherche de segments</a></li>
-            <li class="btn"><a href="#">Recherche d'athlètes</a></li>
-            <li class="btn"><a href="#">Clubs</a></li>
-          </ul>
-        </div>
-        <button class="btn btn--bg">Challenges</button>
-      </nav>
-      <nav class="header__right-nav">
-        <button class="btn btn--bg">Offrir un abonnement</button>
-        <button class="notification-bell btn"><i class="far fa-bell"></i></button>
-        <ul class="header__user">
-          <a href="#" class="btn"><img src="public/image/profile-picture.jpg" alt="user" /><i class="fas fa-angle-down"></i> </a>
-        </ul>
-        <button class="btn"><i class="fas fa-plus"></i></button>
-      </nav>
-      <form class="header__form form" id="form-container">
-        <select class="form__list btn" name="type" id="type">
-          <option class="btn" value="activités">Activités</option>
-          <option class="btn" value="athlètes" selected>Athlètes</option>
-          <option class="btn" value="clubs">Clubs</option>
-          <option class="btn" value="segments">Segments</option>
-        </select>
-        <div class="form__text-field">
-          <input type="text" name="research" class="form__input" placeholder="Rechercher" />
-          <button class="btn form__input-btn"><i class="fas fa-search"></i></button>
-        </div>
-        <button class="btn" id="esc-nav-form"><i class="fas fa-times"></i></button>
-      </form>
+      <div class="header__container">
+        <figure class="header__logo">
+          <a href="index.html"><img src="public/image/img-stava.png" alt="main-logo" /></a>
+        </figure>
+
+        <nav class="header__left-nav" id="left-nav">
+          <button class="btn btn--hover" id="form-btn"><i class="fas fa-search"></i></button>
+          <div class="dropdown">
+            <div class="btn btn--board"><a href="#">Tableau de bord</a><i class="fas fa-angle-down"></i></div>
+            <ul class="dropdown__sub">
+              <li class="btn"><a href="#">Mes segments</a></li>
+              <li class="btn"><a href="#">Mes itinéraires</a></li>
+              <li class="btn"><a href="#">Flux d'activités</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <div class="btn"><a href="#">Entraînement</a><i class="fas fa-angle-down"></i></div>
+            <ul class="dropdown__sub">
+              <li class="btn"><a href="#">Calendrier</a></li>
+              <li class="btn"><a href="#">Mes activités</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <div class="btn"><a href="#">Explorer</a><i class="fas fa-angle-down"></i></div>
+            <ul class="dropdown__sub">
+              <li class="btn"><a href="#">Explorateur de segments</a></li>
+              <li class="btn"><a href="#">Recherche de segments</a></li>
+              <li class="btn"><a href="#">Recherche d'athlètes</a></li>
+              <li class="btn"><a href="#">Clubs</a></li>
+            </ul>
+          </div>
+          <button class="btn btn--hover">Challenges</button>
+        </nav>
+
+        <nav class="header__right-nav">
+          <button class="btn btn--bg">Offrir un abonnement</button>
+          <button class="notification-bell btn btn--hover"><i class="far fa-bell"></i></button>
+          <div class="header__user dropdown">
+            <div class="btn">
+              <a href="#"><img src="public/image/profile-picture.jpg" alt="user" /> </a><i class="fas fa-angle-down"></i>
+            </div>
+            <ul class="dropdown__sub">
+              <li class="btn"><a href="#">Trouver des amis</a></li>
+              <li class="btn"><a href="#">Mon profil</a></li>
+              <li class="btn"><a href="#">Paramètres</a></li>
+              <li class="btn"><a href="#">Se déconnecter</a></li>
+            </ul>
+          </div>
+          <button class="btn btn--hover"><i class="fas fa-plus"></i></button>
+        </nav>
+
+        <form class="header__form form" id="form-container">
+          <select class="form__list btn" name="type" id="type">
+            <option class="btn" value="activités">Activités</option>
+            <option class="btn" value="athlètes" selected>Athlètes</option>
+            <option class="btn" value="clubs">Clubs</option>
+            <option class="btn" value="segments">Segments</option>
+          </select>
+          <div class="form__text-field">
+            <input type="text" name="research" class="form__input" placeholder="Rechercher" />
+            <button class="btn form__input-btn"><i class="fas fa-search"></i></button>
+          </div>
+          <button class="btn" id="esc-nav-form"><i class="fas fa-times"></i></button>
+        </form>
+      </div>
     </header>
     <section class="left-side">
       <div class="user-info">

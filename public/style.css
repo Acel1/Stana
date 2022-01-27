@@ -19,56 +19,76 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 100%;
+  margin: auto;
+  background-color: #f7f7fa;
 }
 
 .btn {
-  height: 60px;
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
+  display: contents;
+  padding: 0 14px;
   border: none;
   background: none;
   font-size: 1.2rem;
+  height: 100%;
   cursor: pointer;
 }
-.btn a {
-  display: flex;
+.btn--board {
+  border-bottom: solid 2px #1b4ee4;
+  font-weight: 500;
   height: 100%;
-  align-items: center;
 }
 .btn--bg {
   background-color: #1b4ee4;
   color: #f7f7fa;
+  border-radius: 0.4rem;
   height: auto;
   padding: 0.3rem 1rem;
 }
+.btn--hover:hover {
+  color: #1b4ee4;
+}
 
+.dropdown {
+  height: 100%;
+}
 .dropdown i {
   margin-left: 12px;
+  cursor: default;
 }
 .dropdown__sub {
   display: none;
   position: absolute;
+  min-width: 195px;
   justify-content: space-between;
-  padding: 0 2rem 0 0;
-  top: 60px;
+  top: 58px;
   flex-direction: column;
   background-color: white;
+  border: 2px solid #bbbbbb;
 }
 .dropdown__sub li {
   height: 60px;
   display: flex;
   align-items: center;
 }
+.dropdown__sub li:hover {
+  background-color: #f3f3f3;
+}
 .dropdown:hover .dropdown__sub {
   display: block;
+}
+.dropdown:hover div > * {
+  color: #1b4ee4;
+}
+.dropdown:hover div {
+  border: solid 2px #bbbbbb;
 }
 
 .form__text-field {
   display: flex;
   align-items: center;
   background: white;
-  border: #dfdfe8 2px solid;
+  border: #bbbbbb 2px solid;
 }
 .form__input {
   border: none;
@@ -80,9 +100,6 @@ img {
   width: 100%;
 }
 
-.header__user a {
-  display: contents;
-}
 .header__user a img {
   width: 35px;
   border: transparent solid 1px;
@@ -94,10 +111,16 @@ h2 {
 }
 
 .header {
-  height: 60px;
   width: 100%;
-  background-color: rgba(231, 146, 85, 0.719);
+  background-color: white;
+  border-bottom: #e7e7f0 2px solid;
   margin-bottom: 2rem;
+  height: 60px;
+}
+.header__container {
+  width: 90%;
+  margin: auto;
+  height: 100%;
 }
 .header__logo {
   float: left;
@@ -113,10 +136,7 @@ h2 {
   float: left;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-.header__dropdowns {
-  display: flex;
+  justify-content: space-around;
 }
 .header__form {
   display: none;
@@ -129,8 +149,12 @@ h2 {
   float: right;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+.header__user {
+  margin: -1rem;
+}
+
 .left-side {
   width: 20%;
   background-color: burlywood;
