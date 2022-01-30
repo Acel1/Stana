@@ -2,30 +2,29 @@
   width: 100%;
   background-color: white;
   border-bottom: $border-main 2px solid;
-  margin-bottom: 2rem;
+  margin-bottom: 35px;
   height: $height-header;
+  & * {
+    font-size: $font-large;
+  }
   &__container {
-    width: 90%;
-    margin: auto;
+    display: flex;
     height: 100%;
+    font-size: $font-large;
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
   }
 
   &__logo {
-    float: left;
-    width: 6%;
-    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin: $margin-header;
   }
 
   &__left-nav {
-    height: 100%;
-    width: 45%;
-    float: left;
     display: flex;
     align-items: center;
-    justify-content: space-around;
   }
 
   &__form {
@@ -35,16 +34,7 @@
   }
 
   &__right-nav {
-    height: 100%;
-    width: 30%;
-    float: right;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    // width: 30%;
-  }
-
-  &__user {
-    margin: -1rem;
   }
 }

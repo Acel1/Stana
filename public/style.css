@@ -25,63 +25,29 @@ body {
 }
 
 .btn {
-  display: contents;
-  padding: 0 14px;
+  display: flex;
+  align-items: center;
   border: none;
   background: none;
-  font-size: 1.2rem;
-  height: 100%;
   cursor: pointer;
+  margin: 0 12px;
+  padding: 4px;
 }
-.btn--board {
-  border-bottom: solid 2px #1b4ee4;
-  font-weight: 500;
-  height: 100%;
+.btn--hover {
+  color: #bbbbbb;
 }
-.btn--bg {
+.btn--hover:hover {
+  color: #888888;
+}
+.btn--hover-blue:hover {
+  color: #1b4ee4;
+}
+.btn--bg-color {
   background-color: #1b4ee4;
   color: #f7f7fa;
   border-radius: 0.4rem;
   height: auto;
-  padding: 0.3rem 1rem;
-}
-.btn--hover:hover {
-  color: #1b4ee4;
-}
-
-.dropdown {
-  height: 100%;
-}
-.dropdown i {
-  margin-left: 12px;
-  cursor: default;
-}
-.dropdown__sub {
-  display: none;
-  position: absolute;
-  min-width: 195px;
-  justify-content: space-between;
-  top: 58px;
-  flex-direction: column;
-  background-color: white;
-  border: 2px solid #bbbbbb;
-}
-.dropdown__sub li {
-  height: 60px;
-  display: flex;
-  align-items: center;
-}
-.dropdown__sub li:hover {
-  background-color: #f3f3f3;
-}
-.dropdown:hover .dropdown__sub {
-  display: block;
-}
-.dropdown:hover div > * {
-  color: #1b4ee4;
-}
-.dropdown:hover div {
-  border: solid 2px #bbbbbb;
+  padding: 8px 18px;
 }
 
 .form__text-field {
@@ -96,8 +62,56 @@ body {
   font-size: 1.2rem;
 }
 
-img {
-  width: 100%;
+.dropdown {
+  display: flex;
+  padding: 0 12px;
+  height: 70px;
+}
+.dropdown button {
+  border: none;
+  background: none;
+}
+.dropdown i {
+  margin-left: 12px;
+  cursor: default;
+}
+.dropdown__sub {
+  display: none;
+  position: absolute;
+  width: 220px;
+  top: 68px;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.dropdown__sub li {
+  font-size: 1.2rem;
+}
+.dropdown__sub li:hover {
+  background-color: #f3f3f3;
+}
+.dropdown__sub li a {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+.dropdown:hover .dropdown__sub {
+  display: block;
+}
+.dropdown:hover button > * {
+  color: #1b4ee4;
+}
+.dropdown:hover button {
+  border-bottom: none;
+}
+.dropdown--user {
+  margin: 0 12px;
+}
+.dropdown--user button {
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
 }
 
 .header__user a img {
@@ -107,36 +121,35 @@ img {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .header {
   width: 100%;
   background-color: white;
   border-bottom: #e7e7f0 2px solid;
-  margin-bottom: 2rem;
-  height: 60px;
+  margin-bottom: 35px;
+  height: 70px;
+}
+.header * {
+  font-size: 1.2rem;
 }
 .header__container {
-  width: 90%;
-  margin: auto;
+  display: flex;
   height: 100%;
+  font-size: 1.2rem;
+  width: 95%;
+  margin: auto;
+  justify-content: space-between;
 }
 .header__logo {
-  float: left;
-  width: 6%;
-  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin: 0 12px;
 }
 .header__left-nav {
-  height: 100%;
-  width: 45%;
-  float: left;
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 .header__form {
   display: none;
@@ -144,34 +157,54 @@ h2 {
   height: 100%;
 }
 .header__right-nav {
-  height: 100%;
-  width: 30%;
-  float: right;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-}
-.header__user {
-  margin: -1rem;
 }
 
 .left-side {
   width: 20%;
+  margin-top: 50px;
   background-color: burlywood;
 }
 .left-side .user-info {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  padding: 0 1rem;
+  margin-top: -50px;
 }
 .left-side .user-info__heading {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.left-side .user-info__heading figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: none;
+}
+.left-side .user-info__heading img {
+  border: 1px transparent solid;
+  border-radius: 80px;
+  width: 100px;
+}
+.left-side .user-info__heading h1 {
+  margin: 10px;
+}
 .left-side .user-info__social {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+.left-side .user-info__social div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left-side .user-info__social div h2 {
+  font-size: 0.9rem;
+}
+.left-side .user-info__social div p {
+  font-size: 1.2rem;
 }
 .left-side .user-stats__slct-btns {
   display: flex;
