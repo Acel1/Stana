@@ -10,10 +10,14 @@ $height-header: 70px;
 $margin-header: 0 12px;
 //---FONTS-SIZE---//
 
-$font-medium: 0.9rem;
-$font-large: 1.2rem;
+$font-medium: 1rem;
+$font-large: 1.1rem;
 $font-xl: 1.5rem;
 
 //---BORDERS---//
 
 $border-main: darken($color-main-white, 5%);
+
+//---box-shadow
+
+$shadow-main: 5px 5px 10px 0px rgb(0 0 0 / 15%);

@@ -1,35 +1,35 @@
 .btn {
   display: flex;
+  justify-content: center;
   align-items: center;
   border: none;
   background: none;
   cursor: pointer;
-  margin: $margin-header;
-  padding: 4px;
+  font-size: $font-large;
+  padding: 5px;
+  &:hover {
+    color: $color-main;
+  }
 
-  &--hover {
+  &--grey {
     color: $color-component;
+    padding: 4px;
+
     &:hover {
       color: darken($color-component, 20%);
     }
   }
-  &--hover-blue {
-    &:hover {
-      color: $color-main;
-    }
-  }
-  &--bg-color {
+
+  &--bg {
     background-color: $color-main;
     color: $color-main-white;
     border-radius: 0.4rem;
-    height: auto;
+    margin: $margin-header;
     padding: 8px 18px;
   }
 }
 
 .form {
-  &__list {
-  }
   &__text-field {
     display: flex;
     align-items: center;

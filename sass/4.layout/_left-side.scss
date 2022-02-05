@@ -1,49 +1,49 @@
 .left-side {
-  width: 20%;
-  margin-top: 50px;
-  background-color: burlywood;
+  width: 18%;
+
   .user-info {
+    margin-top: 50px;
+    margin-bottom: 20px;
     display: flex;
+    background-color: white;
     width: 100%;
     flex-direction: column;
-    margin-top: -50px;
+    padding: 0 20px;
+    box-shadow: 0px 8px 24px rgb(13 13 18 / 0.04);
 
     &__heading {
+      margin-top: -50px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      figure {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        background: none;
-      }
-
-      img {
-        border: 1px transparent solid;
-        border-radius: 80px;
-        width: 100px;
-      }
-
-      h1 {
-        margin: 10px;
-      }
     }
 
     &__social {
       display: flex;
       justify-content: space-evenly;
-
+      padding: 16px 2px;
+      margin: 0 -20px;
+      border-bottom: 2px solid $color-main-white;
       div {
         display: flex;
         flex-direction: column;
         align-items: center;
-        h2 {
-          font-size: $font-medium;
+        &:nth-child(2) {
+          border-left: 2px solid$color-main-white;
+          border-right: 2px solid$color-main-white;
+          padding: 0 16px;
         }
         p {
           font-size: $font-large;
         }
+      }
+    }
+
+    &__last-trng {
+      padding: 16px 0;
+      border-bottom: 2px solid $color-main-white;
+      a {
+        font-weight: 600;
       }
     }
   }
@@ -51,8 +51,27 @@
   .user-stats {
     &__slct-btns {
       display: flex;
+
+      .btn {
+        flex-grow: 1;
+        font-size: 20px;
+        height: 50px;
+      }
+      .btn:nth-child(2) {
+        background: white;
+      }
     }
-    &__slct-btn {
+
+    &__sport-box {
+      background: white;
+      box-shadow: 0px 8px 24px rgb(13 13 18 / 0.04);
+      padding: 20px;
+      .user-stats__set-goal {
+        float: right;
+        font-size: 15px;
+        margin-top: -10px;
+        margin-right: -8px;
+      }
     }
   }
 }

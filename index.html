@@ -22,9 +22,9 @@
           <figure class="header__logo">
             <a href="index.html"><img src="public/image/img-stava.png" alt="main-logo" /></a>
           </figure>
-          <button class="btn btn--hover" id="form-btn"><i class="fas fa-search"></i></button>
+          <button class="btn btn--grey" id="form-btn"><i class="fas fa-search"></i></button>
           <div class="dropdown">
-            <button class=""><a href="#">Tableau de bord</a><i class="fas fa-angle-down"></i></button>
+            <button class="btn"><a href="#">Tableau de bord</a><i class="fas fa-angle-down"></i></button>
             <ul class="dropdown__sub">
               <li class=""><a href="#">Mes segments</a></li>
               <li class=""><a href="#">Mes itinéraires</a></li>
@@ -32,14 +32,14 @@
             </ul>
           </div>
           <div class="dropdown">
-            <button class=""><a href="#">Entraînement</a><i class="fas fa-angle-down"></i></button>
+            <button class="btn"><a href="#">Entraînement</a><i class="fas fa-angle-down"></i></button>
             <ul class="dropdown__sub">
               <li class=""><a href="#">Calendrier</a></li>
               <li class=""><a href="#">Mes activités</a></li>
             </ul>
           </div>
           <div class="dropdown">
-            <button class=""><a href="#">Explorer</a><i class="fas fa-angle-down"></i></button>
+            <button class="btn"><a href="#">Explorer</a><i class="fas fa-angle-down"></i></button>
             <ul class="dropdown__sub">
               <li class=""><a href="#">Explorateur de segments</a></li>
               <li class=""><a href="#">Recherche de segments</a></li>
@@ -47,14 +47,14 @@
               <li class=""><a href="#">Clubs</a></li>
             </ul>
           </div>
-          <button class="btn btn--hover-blue">Challenges</button>
+          <button class="btn">Challenges</button>
         </nav>
 
         <nav class="header__right-nav">
-          <button class="btn btn--bg-color">Offrir un abonnement</button>
-          <button class="notification-bell btn btn--hover"><i class="far fa-bell"></i></button>
+          <button class="btn btn--bg">Offrir un abonnement</button>
+          <button class="notification-bell btn btn--grey"><i class="far fa-bell"></i></button>
           <div class="header__user dropdown dropdown--user">
-            <button>
+            <button class="btn">
               <a href=""><img src="public/image/profile-picture.jpg" alt="user" /> </a><i class="fas fa-angle-down"></i>
             </button>
             <ul class="dropdown__sub">
@@ -64,7 +64,7 @@
               <li class=""><a href="#">Se déconnecter</a></li>
             </ul>
           </div>
-          <button class="btn btn--hover-blue"><i class="fas fa-plus"></i></button>
+          <button class="btn"><i class="fas fa-plus"></i></button>
         </nav>
 
         <form class="header__form form" id="form-container">
@@ -104,18 +104,21 @@
         </div>
         <div class="user-info__last-trng">
           <h2>Dernière activité</h2>
-          <a href="#">Test des nouveaux batons en carbonne !!!</a>
+          <p><a href="#">Test des nouveaux batons en carbonne !!!</a><span> - Hier</span></p>
         </div>
-        <button class="user-info__board-link">
-          <a href="#">Votre journal d'entraînement<i class="fas fa-chevron-right"></i></a>
-        </button>
+        <div class="link link--left-side">
+          <a href="#"
+            ><p>Votre journal d'entraînement</p>
+            <i class="fas fa-chevron-right"></i
+          ></a>
+        </div>
       </div>
       <div class="user-stats">
         <div class="user-stats__slct-btns">
-          <button><i class="far fa-chart-bar"></i></button>
-          <button><i class="fas fa-bicycle"></i></button>
-          <button><i class="fas fa-hiking"></i></button>
-          <button><i class="fas fa-chess"></i></button>
+          <button class="btn"><i class="far fa-chart-bar"></i></button>
+          <button class="btn"><i class="fas fa-bicycle"></i></button>
+          <button class="btn"><i class="fas fa-hiking"></i></button>
+          <button class="btn"><i class="fas fa-chess"></i></button>
         </div>
         <!--TOTAL category-->
         <!-- <div class="user-stats__sport-box">
@@ -139,7 +142,7 @@
 
         <!--BIKE category-->
         <div class="user-stats__sport-box">
-          <button class="user-stats__set-goal"><i class="fas fa-pencil-alt"></i></button>
+          <button class="btn user-stats__set-goal"><i class="fas fa-pencil-alt"></i></button>
           <div class="user-stats__week">
             <h2>CETTE SEMAINE</h2>
             <p>34 km</p>

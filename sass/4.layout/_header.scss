@@ -4,13 +4,10 @@
   border-bottom: $border-main 2px solid;
   margin-bottom: 35px;
   height: $height-header;
-  & * {
-    font-size: $font-large;
-  }
+
   &__container {
     display: flex;
     height: 100%;
-    font-size: $font-large;
     width: 95%;
     margin: auto;
     justify-content: space-between;
