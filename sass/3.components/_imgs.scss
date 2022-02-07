@@ -25,3 +25,27 @@
     }
   }
 }
+.user-stats {
+  &__week-graph {
+    width: 200px;
+    height: 100px;
+    background: repeating-linear-gradient(45deg, white, white 4px, $color-component2 4px, $color-component2 6px);
+    min-height: 100%;
+    border: 1px solid $color-component;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  &__sport-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: $color-component2 solid 2px;
+    font-size: 28px;
+    color: $color-component2;
+  }
+}

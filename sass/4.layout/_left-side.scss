@@ -1,21 +1,20 @@
 .left-side {
-  width: 18%;
+  width: 20%;
 
   .user-info {
     margin-top: 50px;
     margin-bottom: 20px;
     display: flex;
     background-color: white;
-    width: 100%;
     flex-direction: column;
     padding: 0 20px;
     box-shadow: 0px 8px 24px rgb(13 13 18 / 0.04);
 
     &__heading {
-      margin-top: -50px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: -50px;
     }
 
     &__social {
@@ -49,6 +48,14 @@
   }
 
   .user-stats {
+    h2 {
+      font-size: 0.7rem;
+    }
+    p {
+      font-size: $font-xl;
+      font-weight: 300;
+      color: $color-stats;
+    }
     &__slct-btns {
       display: flex;
 
@@ -62,15 +69,47 @@
       }
     }
 
-    &__sport-box {
+    &__card {
       background: white;
       box-shadow: 0px 8px 24px rgb(13 13 18 / 0.04);
-      padding: 20px;
+      padding: 10px;
+      position: relative;
+
       .user-stats__set-goal {
-        float: right;
-        font-size: 15px;
-        margin-top: -10px;
-        margin-right: -8px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 12px;
+      }
+    }
+    &__sport-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & > div {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-flow: row wrap;
+
+          p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: $font-medium;
+            color: black;
+            width: 50%;
+          }
+          :nth-child(3) {
+            border-right: 2px solid $color-component2;
+          }
+        }
       }
     }
   }
