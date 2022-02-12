@@ -1,4 +1,22 @@
-#feed {
+.feed {
   width: 40%;
-  background-color: cadetblue;
+  &__cards {
+    margin-top: 50px;
+  }
+}
+
+.feed-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+
+  box-shadow: $shadow-main;
+  padding: 20px 30px;
+  &__heading {
+    display: flex;
+    align-items: center;
+    div {
+      margin-left: 20px;
+    }
+  }
 }

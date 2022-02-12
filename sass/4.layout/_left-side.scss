@@ -7,8 +7,7 @@
     display: flex;
     background-color: white;
     flex-direction: column;
-    padding: 0 20px;
-    box-shadow: 0px 8px 24px rgb(13 13 18 / 0.04);
+    box-shadow: $shadow-main;
 
     &__heading {
       display: flex;
@@ -39,7 +38,7 @@
     }
 
     &__last-trng {
-      padding: 16px 0;
+      padding: 16px 20px;
       border-bottom: 2px solid $color-main-white;
       a {
         font-weight: 600;
@@ -48,14 +47,6 @@
   }
 
   .user-stats {
-    h2 {
-      font-size: 0.7rem;
-    }
-    p {
-      font-size: $font-xl;
-      font-weight: 300;
-      color: $color-stats;
-    }
     &__slct-btns {
       display: flex;
 
@@ -69,10 +60,9 @@
       }
     }
 
-    &__card {
+    &__cards {
       background: white;
-      box-shadow: 0px 8px 24px rgb(13 13 18 / 0.04);
-      padding: 10px;
+      box-shadow: $shadow-main;
       position: relative;
 
       .user-stats__set-goal {
@@ -86,11 +76,15 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100%;
+
       & > div {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 15px 0;
+        width: 100%;
+        border-bottom: 2px solid $color-component2;
+
         & > div {
           display: flex;
           justify-content: space-around;

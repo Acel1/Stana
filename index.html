@@ -19,28 +19,28 @@
     <header class="header">
       <div class="header__container">
         <nav class="header__left-nav" id="left-nav">
-          <figure class="header__logo">
+          <h1 class="header__logo" alt="application suivi entrainement parodie stannah strava">
             <a href="index.html"><img src="public/image/img-stava.png" alt="main-logo" /></a>
-          </figure>
+          </h1>
           <button class="btn btn--grey" id="form-btn"><i class="fas fa-search"></i></button>
-          <div class="dropdown">
+          <div class="dropdown dropdown--header">
             <button class="btn"><a href="#">Tableau de bord</a><i class="fas fa-angle-down"></i></button>
-            <ul class="dropdown__sub">
+            <ul class="dropdown__sub dropdown__sub--header">
               <li class=""><a href="#">Mes segments</a></li>
               <li class=""><a href="#">Mes itinéraires</a></li>
               <li class=""><a href="#">Flux d'activités</a></li>
             </ul>
           </div>
-          <div class="dropdown">
+          <div class="dropdown dropdown--header">
             <button class="btn"><a href="#">Entraînement</a><i class="fas fa-angle-down"></i></button>
-            <ul class="dropdown__sub">
+            <ul class="dropdown__sub dropdown__sub--header">
               <li class=""><a href="#">Calendrier</a></li>
               <li class=""><a href="#">Mes activités</a></li>
             </ul>
           </div>
-          <div class="dropdown">
+          <div class="dropdown dropdown--header">
             <button class="btn"><a href="#">Explorer</a><i class="fas fa-angle-down"></i></button>
-            <ul class="dropdown__sub">
+            <ul class="dropdown__sub dropdown__sub--header">
               <li class=""><a href="#">Explorateur de segments</a></li>
               <li class=""><a href="#">Recherche de segments</a></li>
               <li class=""><a href="#">Recherche d'athlètes</a></li>
@@ -57,7 +57,7 @@
             <button class="btn">
               <a href=""><img src="public/image/profile-picture.jpg" alt="user" /> </a><i class="fas fa-angle-down"></i>
             </button>
-            <ul class="dropdown__sub">
+            <ul class="dropdown__sub dropdown__sub--user">
               <li class=""><a href="#">Trouver des amis</a></li>
               <li class=""><a href="#">Mon profil</a></li>
               <li class=""><a href="#">Paramètres</a></li>
@@ -86,32 +86,30 @@
       <div class="user-info">
         <div class="user-info__heading">
           <figure class=""><img class="" src="/public/image/profile-picture.jpg" alt="profile picture" /></figure>
-          <h1>Axel Caron</h1>
+          <h2>Axel Caron</h2>
         </div>
         <div class="user-info__social">
           <div>
-            <h2>Abonements</h2>
+            <h3>Abonements</h3>
             <p>61</p>
           </div>
           <div>
-            <h2>Abonnés</h2>
+            <h3>Abonnés</h3>
             <p>20</p>
           </div>
           <div>
-            <h2>Activités</h2>
+            <h3>Activités</h3>
             <p>974</p>
           </div>
         </div>
         <div class="user-info__last-trng">
-          <h2>Dernière activité</h2>
+          <h3>Dernière activité</h3>
           <p><a href="#">Test des nouveaux batons en carbonne !!!</a><span> - Hier</span></p>
         </div>
-        <div class="link link--left-side">
-          <a href="#"
-            ><p>Votre journal d'entraînement</p>
-            <i class="fas fa-chevron-right"></i
-          ></a>
-        </div>
+        <a href="#" class="link link--left-side">
+          <p>Votre journal d'entraînement</p>
+          <i class="fas fa-chevron-right"></i>
+        </a>
       </div>
       <div class="user-stats">
         <div class="user-stats__slct-btns">
@@ -120,8 +118,9 @@
           <button class="btn"><i class="fas fa-hiking"></i></button>
           <button class="btn"><i class="fas fa-chess"></i></button>
         </div>
-        <!--TOTAL category-->
-        <!-- <div class="user-stats__card">
+        <div class="user-stats__cards">
+          <!--TOTAL category-->
+          <!-- <div class="user-stats__card">
           <button class="user-stats__set-goal"></button>
           <div class="week-stats">
             <h2 class="week-stats__heading"></h2>
@@ -140,30 +139,34 @@
           </div>
         </div> -->
 
-        <!--BIKE category-->
-        <div class="user-stats__card">
-          <button class="btn user-stats__set-goal"><i class="fas fa-pencil-alt"></i></button>
-          <div class="user-stats__sport-box">
-            <div class="user-stats__week">
-              <h2>CETTE SEMAINE</h2>
-              <p>34 km</p>
-              <div>
-                <figure class="user-stats__week-graph">feature coming soon...</figure>
-                <figure class="user-stats__sport-logo"><i class="fas fa-bicycle"></i></figure>
-                <p>1h08mins</p>
-                <p>181 m</p>
+          <!--BIKE category-->
+          <div class="user-stats__card">
+            <button class="btn user-stats__set-goal"><i class="fas fa-pencil-alt"></i></button>
+            <div class="user-stats__sport-box">
+              <div class="user-stats__week-year-card">
+                <h3>CETTE SEMAINE</h3>
+                <p class="text--stats-km">34 km</p>
+                <div>
+                  <figure class="user-stats__week-graph">feature coming soon...</figure>
+                  <figure class="user-stats__sport-logo"><i class="fas fa-bicycle"></i></figure>
+                  <p>1h08mins</p>
+                  <p>181 m</p>
+                </div>
+              </div>
+              <div class="user-stats__week-year-card">
+                <h3>CETTE ANNÉE</h3>
+                <p class="text--stats-km">4402 km</p>
+                <figure class="user-stats__year-graph">feature coming soon...</figure>
               </div>
             </div>
-            <div class="user-stats__year">
-              <h2>CETTE ANNÉE</h2>
-              <p>4402 km</p>
-              <figure class="user-stats__year-graph">feature coming soon...</figure>
-            </div>
           </div>
-        </div>
-        <!--HIKING category-->
+          <a href="#" class="link link--left-side">
+            <p>Gérez vos objectifs</p>
+            <i class="fas fa-chevron-right"></i>
+          </a>
+          <!--HIKING category-->
 
-        <!-- <div class="user-stats__card">
+          <!-- <div class="user-stats__card">
           <button class="user-stats__set-goal"></button>
           <div class="week-stats">
             <h2 class="week-stats__heading"></h2>
@@ -181,9 +184,9 @@
             <div class="year-stats__graph"></div>
           </div>
         </div> -->
-        <!--CHESS category-->
+          <!--CHESS category-->
 
-        <!-- <div class="user-stats__card">
+          <!-- <div class="user-stats__card">
           <button class="user-stats__set-goal"></button>
           <div class="week-stats">
             <h2 class="week-stats__heading"></h2>
@@ -201,61 +204,59 @@
             <div class="year-stats__graph"></div>
           </div>
         </div> -->
-        <button class="user-stats__manage-goal">
-          <a>Gérez vos objectifs<i class="fas fa-chevron-right"></i></a>
-        </button>
+        </div>
       </div>
     </section>
     <!---- FEED --------
     ------------------->
-    <section id="feed">
-      <nav class="nav">
-        <button class="nav__list-btn">Abonements<i class="fas fa-chevron-right"></i></button>
-        <ul class="nav__dropdown">
-          <li class="nav__li"><a href="#">Polygone de Vincennes</a></li>
-          <li class="nav__li"><a href="#">Vos activités</a></li>
-          <li class="nav__li"><a href="#">Le Club des Blousons Noirs</a></li>
-          <li class="nav__li"><a href="#">EHPAD MAFIA SCEAUX</a></li>
+    <section class="feed">
+      <div class="dropdown dropdown--feed">
+        <button>Abonnements<i class="fas fa-angle-down"></i></button>
+        <ul class="dropdown__sub dropdown__sub--feed">
+          <li><a href="#">Polygone de Vincennes</a></li>
+          <li><a href="#">Vos activités</a></li>
+          <li><a href="#">Le Club des Blousons Noirs</a></li>
+          <li><a href="#">EHPAD MAFIA SCEAUX</a></li>
         </ul>
-      </nav>
-      <article class="cards">
-        <div class="card">
+      </div>
+
+      <article class="feed__cards">
+        <div class="feed-card">
           <a href="#">
-            <div class="card__id">
-              <img class="card__pp" src="/public/image/pp-michel-duc.jpg" alt="User profile picture" />
-              <h2 class="card__user-name">Michel DUC</h2>
-              <div class="card__date-place">
-                <p class="card__date">Aujourd'hui à 10:16 -</p>
-                <p class="card__place"><span style="visibility: hidden">.</span><a href="#">Eygalières, Bouches-du-Rhône</a></p>
+            <div class="feed-card__heading">
+              <figure class="feed-card__pp"><img src="/public/image/pp-michel-duc.jpg" alt="User profile picture" /></figure>
+              <div>
+                <h3>Michel DUC</h3>
+                <p>Aujourd'hui à 10:16 - Eygalières, Bouches-du-Rhône</p>
               </div>
             </div>
-            <div class="card__name">
-              <i class="fas fa-bicycle"></i>
-              <h1>Sortie à vélo matinale</h1>
-            </div>
-            <div class="card__data">
-              <div class="card__distance">
+            <h2>
+              <figure><i class="fas fa-bicycle"></i></figure>
+              Sortie à vélo matinale
+            </h2>
+            <div>
+              <div>
                 <h3>Distance</h3>
                 <p>84 km</p>
               </div>
-              <div class="card__speed">
+              <div>
                 <h3>Dénivelé</h3>
                 <p>412 m</p>
               </div>
-              <div class="card__duration">
+              <div>
                 <h3>Durée</h3>
                 <p>3h 12min</p>
               </div>
             </div>
-            <div class="card__map">feature coming soon...</div>
-            <div class="card__social">
-              <div class="card__kudos-comments">
-                <button class="card__show-kudos">1 126 Kudos</button>
-                .
-                <button class="card__show-comments">43 commentaires</button>
+            <figure>feature coming soon...</figure>
+            <div class="feed-card__social">
+              <div>
+                <a href="#">1 126 Kudos</a>
+
+                <a href="#">43 commentaires</a>
               </div>
-              <button class="card__kudo-btn"><i class="far fa-thumbs-up"></i></button>
-              <button class="card__comment-btn"><i class="far fa-comment-alt"></i></button>
+              <button><i class="far fa-thumbs-up"></i></button>
+              <button><i class="far fa-comment-alt"></i></button>
             </div>
           </a>
         </div>

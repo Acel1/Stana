@@ -1,19 +1,17 @@
 .link {
   font-size: $font-large;
+
   &:hover {
     color: $color-main;
   }
   &--left-side {
-    padding: 20px 0;
-    a {
-      display: flex;
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-      i {
-        font-size: $font-xl;
-        color: $color-component;
-      }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    i {
+      font-size: $font-xl;
+      color: $color-component;
     }
   }
 }

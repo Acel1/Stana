@@ -3,3 +3,9 @@
     color: $color-main;
   }
 }
+
+@mixin bg-striped {
+  background: repeating-linear-gradient(45deg, white, white 4px, $color-component2 4px, $color-component2 6px);
+  min-height: 100%;
+  border: 1px solid $color-component;
+}
