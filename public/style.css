@@ -29,7 +29,6 @@ body {
   justify-content: center;
   align-items: center;
   border: none;
-  background: none;
   cursor: pointer;
   font-size: 1.1rem;
   padding: 5px;
@@ -40,28 +39,21 @@ body {
 .btn--grey {
   color: #bbbbbb;
   padding: 4px;
+  background: none;
 }
 .btn--grey:hover {
   color: #888888;
 }
 .btn--bg {
   background-color: #1b4ee4;
+  background: none;
   color: #f7f7fa;
   border-radius: 0.4rem;
   margin: 0 12px;
   padding: 8px 18px;
 }
-
-.form__text-field {
-  display: flex;
-  align-items: center;
-  background: white;
-  border: #bbbbbb 2px solid;
-}
-.form__input {
-  border: none;
-  background: none;
-  font-size: 1.1rem;
+.btn--small {
+  padding: 8px 12px;
 }
 
 .dropdown {
@@ -148,6 +140,18 @@ body {
   background-color: #f3f3f3;
 }
 
+.form__text-field {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: #bbbbbb 2px solid;
+}
+.form__input {
+  border: none;
+  background: none;
+  font-size: 1.1rem;
+}
+
 .header__user a img {
   width: 35px;
   border: transparent solid 1px;
@@ -174,6 +178,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 0.9rem;
+  font-style: italic;
   background: repeating-linear-gradient(45deg, white, white 4px, #f0f0f5 4px, #f0f0f5 6px);
   min-height: 100%;
   border: 1px solid #bbbbbb;
@@ -196,6 +202,8 @@ body {
   width: 90%;
   height: 40px;
   margin-top: 10px;
+  font-size: 0.9rem;
+  font-style: italic;
   background: repeating-linear-gradient(45deg, white, white 4px, #f0f0f5 4px, #f0f0f5 6px);
   min-height: 100%;
   border: 1px solid #bbbbbb;
@@ -205,22 +213,57 @@ body {
   width: 50px;
   border-radius: 100px;
 }
-
-.link {
-  font-size: 1.1rem;
+.feed-card__sport-logo {
+  display: flex;
+  justify-content: center;
+  width: 50px;
 }
+.feed-card__sport-logo i {
+  font-size: 25px;
+}
+.feed-card__map {
+  height: 280px;
+  justify-content: center;
+  background: url("/public/image/feed-map.jpg");
+  background-size: cover;
+  position: relative;
+}
+.feed-card__map-layer {
+  background-color: rgba(240, 240, 245, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feed-card__map-layer p {
+  font-size: 1.5rem;
+  font-style: italic;
+  width: 100%;
+  text-align: center;
+  background-color: #f0f0f5;
+  border: 1px solid #bbbbbb;
+}
+
 .link:hover {
   color: #1b4ee4;
 }
 .link--left-side {
+  font-size: 1.1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  padding: 20px 15px;
 }
 .link--left-side i {
   font-size: 1.5rem;
   color: #bbbbbb;
+}
+.link--text {
+  font-size: 1rem;
 }
 
 .text--stats-km {
@@ -392,12 +435,36 @@ h3 {
   box-shadow: 0px 8px 24px rgba(13, 13, 18, 0.04);
   padding: 20px 30px;
 }
-.feed-card__heading {
+.feed-card > * {
+  margin-bottom: 18px;
   display: flex;
   align-items: center;
 }
+.feed-card > *:last-child {
+  margin-bottom: 0;
+}
 .feed-card__heading div {
   margin-left: 20px;
+}
+.feed-card__title h2 {
+  margin-left: 20px;
+}
+.feed-card__stats {
+  margin-left: 50px;
+}
+.feed-card__stats div {
+  padding: 0 20px;
+}
+.feed-card__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feed-card__social div {
+  display: inherit;
+}
+.feed-card__social div span {
+  padding: 0 8px;
 }
 
 #right-side {

@@ -1,0 +1,13 @@
+.form {
+  &__text-field {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: $color-component 2px solid;
+  }
+  &__input {
+    border: none;
+    background: none;
+    font-size: $font-large;
+  }
+}

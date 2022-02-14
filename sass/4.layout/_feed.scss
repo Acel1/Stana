@@ -12,11 +12,41 @@
 
   box-shadow: $shadow-main;
   padding: 20px 30px;
-  &__heading {
+
+  & > * {
+    margin-bottom: 18px;
     display: flex;
     align-items: center;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__heading {
     div {
       margin-left: 20px;
+    }
+  }
+  &__title {
+    h2 {
+      margin-left: 20px;
+    }
+  }
+  &__stats {
+    margin-left: 50px;
+    div {
+      padding: 0 20px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      display: inherit;
+      span {
+        padding: 0 8px;
+      }
     }
   }
 }
