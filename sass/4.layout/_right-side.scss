@@ -1,4 +1,105 @@
-#right-side {
-  width: 20%;
+.right-side {
   background-color: cornflowerblue;
+  padding: 0 5%;
+  h2 {
+    font-size: $font-large;
+    margin-bottom: 12px;
+  }
+
+  &__div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+
+  &__challenges,
+  &__tip {
+    width: 100%;
+    flex-direction: row;
+    gap: 12px;
+    div {
+      p {
+        margin-bottom: 15px;
+      }
+    }
+    figure {
+      text-align: center;
+      margin-top: 10px;
+      i {
+        color: $color-component;
+        background-color: white;
+        padding: 12px;
+        font-size: $font-xl;
+        border-radius: 100px;
+        border: 1px $color-component2 solid;
+      }
+    }
+  }
+  &__clubs {
+    align-items: flex-start;
+    button {
+      background-color: white;
+      margin: 12px;
+      padding: 4px 8px;
+      font-weight: 600;
+    }
+  }
+}
+
+.clubs {
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  &__card {
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+  }
+}
+
+.contact-suggest {
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 12px 0;
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    h4 {
+      font-weight: 500;
+    }
+    img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 100px;
+    }
+    a {
+      font-weight: 600;
+      color: $color-main;
+      &:hover {
+        color: darken($color: $color-main, $amount: 10);
+      }
+    }
+  }
+  button {
+    width: fit-content;
+    padding: 4px 8px;
+    background-color: white;
+    border: none;
+    font-weight: 600;
+  }
 }

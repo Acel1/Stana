@@ -16,9 +16,8 @@ a {
 }
 
 body {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 22% 55% 23%;
   width: 100%;
   margin: auto;
   background-color: #f7f7fa;
@@ -29,24 +28,22 @@ body {
   justify-content: center;
   align-items: center;
   border: none;
+  background: none;
   cursor: pointer;
-  font-size: 1.1rem;
   padding: 5px;
 }
 .btn:hover {
   color: #1b4ee4;
 }
 .btn--grey {
-  color: #bbbbbb;
+  color: #6e6e6e;
   padding: 4px;
-  background: none;
 }
 .btn--grey:hover {
-  color: #888888;
+  color: #3b3b3b;
 }
 .btn--bg {
   background-color: #1b4ee4;
-  background: none;
   color: #f7f7fa;
   border-radius: 0.4rem;
   margin: 0 12px;
@@ -122,7 +119,7 @@ body {
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.15);
 }
 .dropdown__sub li {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 .dropdown__sub li a {
   display: flex;
@@ -144,12 +141,12 @@ body {
   display: flex;
   align-items: center;
   background: white;
-  border: #bbbbbb 2px solid;
+  border: #6e6e6e 2px solid;
 }
 .form__input {
   border: none;
   background: none;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 
 .header__user a img {
@@ -180,9 +177,9 @@ body {
   justify-content: center;
   font-size: 0.9rem;
   font-style: italic;
-  background: repeating-linear-gradient(45deg, white, white 4px, #f0f0f5 4px, #f0f0f5 6px);
+  background: repeating-linear-gradient(45deg, white, white 4px, #dadada 4px, #dadada 6px);
   min-height: 100%;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #6e6e6e;
 }
 .user-stats__sport-logo {
   display: flex;
@@ -191,9 +188,9 @@ body {
   width: 65px;
   height: 65px;
   border-radius: 100px;
-  border: #f0f0f5 solid 2px;
+  border: #dadada solid 2px;
   font-size: 28px;
-  color: #f0f0f5;
+  color: #dadada;
 }
 .user-stats__year-graph {
   display: flex;
@@ -204,9 +201,9 @@ body {
   margin-top: 10px;
   font-size: 0.9rem;
   font-style: italic;
-  background: repeating-linear-gradient(45deg, white, white 4px, #f0f0f5 4px, #f0f0f5 6px);
+  background: repeating-linear-gradient(45deg, white, white 4px, #dadada 4px, #dadada 6px);
   min-height: 100%;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #6e6e6e;
 }
 
 .feed-card__pp img {
@@ -229,7 +226,7 @@ body {
   position: relative;
 }
 .feed-card__map-layer {
-  background-color: rgba(240, 240, 245, 0.7);
+  background-color: rgba(218, 218, 218, 0.7);
   position: absolute;
   top: 0;
   left: 0;
@@ -240,51 +237,26 @@ body {
   justify-content: center;
 }
 .feed-card__map-layer p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-style: italic;
   width: 100%;
   text-align: center;
-  background-color: #f0f0f5;
-  border: 1px solid #bbbbbb;
+  background-color: #dadada;
+  border: 1px solid #6e6e6e;
 }
 
 .link:hover {
   color: #1b4ee4;
 }
-.link--left-side {
-  font-size: 1.1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 15px;
-}
-.link--left-side i {
-  font-size: 1.5rem;
-  color: #bbbbbb;
-}
-.link--text {
-  font-size: 1rem;
-}
-
 .text--stats-km {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 300;
   color: #79d7bd;
 }
 
-h1 {
-  margin: 18px 0 4px 0;
-}
-
-h2 {
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-
 h3 {
+  font-size: 1.1rem;
   font-weight: 800;
-  font-size: 1rem;
-  margin-bottom: 5px;
 }
 
 .user-stats__sport-box h3 {
@@ -292,7 +264,7 @@ h3 {
 }
 
 .header {
-  width: 100%;
+  grid-column: 1/4;
   background-color: white;
   border-bottom: #e7e7f0 2px solid;
   margin-bottom: 20px;
@@ -301,31 +273,31 @@ h3 {
 .header__container {
   display: flex;
   height: 100%;
-  width: 95%;
   margin: auto;
   justify-content: space-between;
-}
-.header__logo {
-  display: flex;
-  align-items: center;
-  margin: 0 12px;
-}
-.header__left-nav {
-  display: flex;
-  align-items: center;
 }
 .header__form {
   display: none;
   background-color: #fdd465;
   height: 100%;
 }
+.header__left-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #def08e;
+  width: 50%;
+}
 .header__right-nav {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  background: #8b8be0;
+  width: 25%;
 }
 
 .left-side {
-  width: 20%;
+  padding: 0 5%;
 }
 .left-side .user-info {
   margin-top: 50px;
@@ -345,7 +317,6 @@ h3 {
   display: flex;
   justify-content: space-evenly;
   padding: 16px 2px;
-  margin: 0 -20px;
   border-bottom: 2px solid #f7f7fa;
 }
 .left-side .user-info__social div {
@@ -358,9 +329,6 @@ h3 {
   border-right: 2px solid #f7f7fa;
   padding: 0 16px;
 }
-.left-side .user-info__social div p {
-  font-size: 1.1rem;
-}
 .left-side .user-info__last-trng {
   padding: 16px 20px;
   border-bottom: 2px solid #f7f7fa;
@@ -368,62 +336,72 @@ h3 {
 .left-side .user-info__last-trng a {
   font-weight: 600;
 }
-.left-side .user-stats__slct-btns {
+.left-side .left-side__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+}
+.left-side .left-side__link i {
+  color: #6e6e6e;
+}
+.left-side .left-side__link:hover {
+  color: #1b4ee4;
+}
+
+.user-stats__slct-btns {
   display: flex;
 }
-.left-side .user-stats__slct-btns .btn {
+.user-stats__slct-btns .btn {
   flex-grow: 1;
   font-size: 20px;
   height: 50px;
 }
-.left-side .user-stats__slct-btns .btn:nth-child(2) {
+.user-stats__slct-btns .btn:nth-child(2) {
   background: white;
 }
-.left-side .user-stats__cards {
+.user-stats__cards {
   background: white;
   box-shadow: 0px 8px 24px rgba(13, 13, 18, 0.04);
   position: relative;
 }
-.left-side .user-stats__cards .user-stats__set-goal {
+.user-stats__cards .user-stats__set-goal {
   position: absolute;
   top: 10px;
   right: 10px;
   font-size: 12px;
 }
-.left-side .user-stats__sport-box {
+.user-stats__sport-box {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.left-side .user-stats__sport-box > div {
+.user-stats__sport-box > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 15px 0;
   width: 100%;
-  border-bottom: 2px solid #f0f0f5;
+  border-bottom: 2px solid #dadada;
 }
-.left-side .user-stats__sport-box > div > div {
+.user-stats__sport-box > div > div {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
 }
-.left-side .user-stats__sport-box > div > div p {
+.user-stats__sport-box > div > div p {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: black;
   width: 50%;
 }
-.left-side .user-stats__sport-box > div > div :nth-child(3) {
-  border-right: 2px solid #f0f0f5;
+.user-stats__sport-box > div > div :nth-child(3) {
+  border-right: 2px solid #dadada;
 }
 
-.feed {
-  width: 40%;
-}
 .feed__cards {
   margin-top: 50px;
 }
@@ -467,9 +445,102 @@ h3 {
   padding: 0 8px;
 }
 
-#right-side {
-  width: 20%;
+.right-side {
   background-color: cornflowerblue;
+  padding: 0 5%;
+}
+.right-side h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+.right-side__div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+.right-side__challenges, .right-side__tip {
+  width: 100%;
+  flex-direction: row;
+  gap: 12px;
+}
+.right-side__challenges div p, .right-side__tip div p {
+  margin-bottom: 15px;
+}
+.right-side__challenges figure, .right-side__tip figure {
+  text-align: center;
+  margin-top: 10px;
+}
+.right-side__challenges figure i, .right-side__tip figure i {
+  color: #6e6e6e;
+  background-color: white;
+  padding: 12px;
+  font-size: 1.6rem;
+  border-radius: 100px;
+  border: 1px #dadada solid;
+}
+.right-side__clubs {
+  align-items: flex-start;
+}
+.right-side__clubs button {
+  background-color: white;
+  margin: 12px;
+  padding: 4px 8px;
+  font-weight: 600;
+}
+
+.clubs__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.clubs__card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.contact-suggest__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 12px 0;
+}
+.contact-suggest__card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.contact-suggest__card div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.contact-suggest__card h4 {
+  font-weight: 500;
+}
+.contact-suggest__card img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+.contact-suggest__card a {
+  font-weight: 600;
+  color: #1b4ee4;
+}
+.contact-suggest__card a:hover {
+  color: #163eb6;
+}
+.contact-suggest button {
+  width: fit-content;
+  padding: 4px 8px;
+  background-color: white;
+  border: none;
+  font-weight: 600;
+}
+
+.footer {
+  grid-column: 3/4;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,18 +2,7 @@
   &:hover {
     color: $color-main;
   }
-  &--left-side {
-    font-size: $font-large;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 15px;
-    i {
-      font-size: $font-xl;
-      color: $color-component;
-    }
-  }
+
   &--text {
-    font-size: $font-medium;
   }
 }

@@ -3,9 +3,10 @@
   justify-content: center;
   align-items: center;
   border: none;
+  background: none;
 
   cursor: pointer;
-  font-size: $font-large;
+
   padding: 5px;
   &:hover {
     color: $color-main;
@@ -14,7 +15,6 @@
   &--grey {
     color: $color-component;
     padding: 4px;
-    background: none;
 
     &:hover {
       color: darken($color-component, 20%);
@@ -23,7 +23,7 @@
 
   &--bg {
     background-color: $color-main;
-    background: none;
+
     color: $color-main-white;
     border-radius: 0.4rem;
     margin: $margin-header;

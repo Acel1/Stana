@@ -41,7 +41,7 @@
     height: 40px;
     margin-left: -12px;
     & > * {
-      font-size: $font-large;
+      font-size: $font-medium;
       padding: 0 12px;
     }
     &:active .dropdown__sub {

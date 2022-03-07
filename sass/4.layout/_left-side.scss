@@ -1,6 +1,5 @@
 .left-side {
-  width: 20%;
-
+  padding: 0 5%;
   .user-info {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -20,7 +19,6 @@
       display: flex;
       justify-content: space-evenly;
       padding: 16px 2px;
-      margin: 0 -20px;
       border-bottom: 2px solid $color-main-white;
       div {
         display: flex;
@@ -32,7 +30,6 @@
           padding: 0 16px;
         }
         p {
-          font-size: $font-large;
         }
       }
     }
@@ -45,64 +42,75 @@
       }
     }
   }
-
-  .user-stats {
-    &__slct-btns {
-      display: flex;
-
-      .btn {
-        flex-grow: 1;
-        font-size: 20px;
-        height: 50px;
-      }
-      .btn:nth-child(2) {
-        background: white;
-      }
+  .left-side__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    i {
+      color: $color-component;
     }
+    &:hover {
+      color: $color-main;
+    }
+  }
+}
+.user-stats {
+  &__slct-btns {
+    display: flex;
 
-    &__cards {
+    .btn {
+      flex-grow: 1;
+      font-size: 20px;
+      height: 50px;
+    }
+    .btn:nth-child(2) {
       background: white;
-      box-shadow: $shadow-main;
-      position: relative;
-
-      .user-stats__set-goal {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        font-size: 12px;
-      }
     }
-    &__sport-box {
+  }
+
+  &__cards {
+    background: white;
+    box-shadow: $shadow-main;
+    position: relative;
+
+    .user-stats__set-goal {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 12px;
+    }
+  }
+  &__sport-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > div {
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 15px 0;
+      width: 100%;
+      border-bottom: 2px solid $color-component2;
 
       & > div {
         display: flex;
-        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        padding: 15px 0;
-        width: 100%;
-        border-bottom: 2px solid $color-component2;
+        flex-flow: row wrap;
 
-        & > div {
+        p {
           display: flex;
-          justify-content: space-around;
           align-items: center;
-          flex-flow: row wrap;
+          justify-content: center;
 
-          p {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            font-size: $font-medium;
-            color: black;
-            width: 50%;
-          }
-          :nth-child(3) {
-            border-right: 2px solid $color-component2;
-          }
+          font-size: $font-medium;
+          color: black;
+          width: 50%;
+        }
+        :nth-child(3) {
+          border-right: 2px solid $color-component2;
         }
       }
     }

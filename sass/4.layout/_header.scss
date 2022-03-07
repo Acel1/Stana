@@ -1,5 +1,5 @@
 .header {
-  width: 100%;
+  grid-column: 1 / 4;
   background-color: white;
   border-bottom: $border-main 2px solid;
   margin-bottom: 20px;
@@ -8,20 +8,11 @@
   &__container {
     display: flex;
     height: 100%;
-    width: 95%;
     margin: auto;
     justify-content: space-between;
   }
 
   &__logo {
-    display: flex;
-    align-items: center;
-    margin: $margin-header;
-  }
-
-  &__left-nav {
-    display: flex;
-    align-items: center;
   }
 
   &__form {
@@ -29,9 +20,18 @@
     background-color: rgb(253, 212, 101);
     height: 100%;
   }
-
+  &__left-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(222, 240, 142);
+    width: 50%;
+  }
   &__right-nav {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    background: rgb(139, 139, 224);
+    width: 25%;
   }
 }

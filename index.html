@@ -23,23 +23,23 @@
             <a href="index.html"><img src="public/image/img-stava.png" alt="main-logo" /></a>
           </h1>
           <button class="btn btn--grey" id="form-btn"><i class="fas fa-search"></i></button>
-          <div class="dropdown dropdown--header">
-            <button class="btn"><a href="#">Tableau de bord</a><i class="fas fa-angle-down"></i></button>
+          <div class="dropdown">
+            <a href="#">Tableau de bord</a><i class="fas fa-angle-down"></i>
             <ul class="dropdown__sub dropdown__sub--header">
               <li class=""><a href="#">Mes segments</a></li>
               <li class=""><a href="#">Mes itinéraires</a></li>
               <li class=""><a href="#">Flux d'activités</a></li>
             </ul>
           </div>
-          <div class="dropdown dropdown--header">
-            <button class="btn"><a href="#">Entraînement</a><i class="fas fa-angle-down"></i></button>
+          <div class="dropdown">
+            <a href="#">Entraînement</a><i class="fas fa-angle-down"></i>
             <ul class="dropdown__sub dropdown__sub--header">
               <li class=""><a href="#">Calendrier</a></li>
               <li class=""><a href="#">Mes activités</a></li>
             </ul>
           </div>
-          <div class="dropdown dropdown--header">
-            <button class="btn"><a href="#">Explorer</a><i class="fas fa-angle-down"></i></button>
+          <div class="dropdown">
+            <a href="#">Explorer</a><i class="fas fa-angle-down"></i>
             <ul class="dropdown__sub dropdown__sub--header">
               <li class=""><a href="#">Explorateur de segments</a></li>
               <li class=""><a href="#">Recherche de segments</a></li>
@@ -47,16 +47,15 @@
               <li class=""><a href="#">Clubs</a></li>
             </ul>
           </div>
-          <button class="btn">Challenges</button>
+          <a href="#">Challenges</a>
         </nav>
 
         <nav class="header__right-nav">
           <button class="btn btn--bg">Offrir un abonnement</button>
           <button class="notification-bell btn btn--grey"><i class="far fa-bell"></i></button>
-          <div class="header__user dropdown dropdown--user">
-            <button class="btn">
-              <a href=""><img src="public/image/profile-picture.jpg" alt="user" /> </a><i class="fas fa-angle-down"></i>
-            </button>
+          <div class="dropdown header__user">
+            <a href=""><img src="public/image/profile-picture.jpg" alt="user" /> </a><i class="fas fa-angle-down"></i>
+
             <ul class="dropdown__sub dropdown__sub--user">
               <li class=""><a href="#">Trouver des amis</a></li>
               <li class=""><a href="#">Mon profil</a></li>
@@ -82,6 +81,7 @@
         </form>
       </div>
     </header>
+
     <section class="left-side">
       <div class="user-info">
         <div class="user-info__heading">
@@ -90,15 +90,15 @@
         </div>
         <div class="user-info__social">
           <div>
-            <h3>Abonements</h3>
+            <h4>Abonements</h4>
             <p>61</p>
           </div>
           <div>
-            <h3>Abonnés</h3>
+            <h4>Abonnés</h4>
             <p>20</p>
           </div>
           <div>
-            <h3>Activités</h3>
+            <h4>Activités</h4>
             <p>974</p>
           </div>
         </div>
@@ -106,7 +106,7 @@
           <h3>Dernière activité</h3>
           <p><a href="#">Test des nouveaux batons en carbonne !!!</a><span> - Hier</span></p>
         </div>
-        <a href="#" class="link link--left-side">
+        <a href="#" class="left-side__link">
           <p>Votre journal d'entraînement</p>
           <i class="fas fa-chevron-right"></i>
         </a>
@@ -160,7 +160,7 @@
               </div>
             </div>
           </div>
-          <a href="#" class="link link--left-side">
+          <a href="#" class="left-side__link">
             <p>Gérez vos objectifs</p>
             <i class="fas fa-chevron-right"></i>
           </a>
@@ -207,6 +207,7 @@
         </div>
       </div>
     </section>
+
     <!---- FEED --------
     ------------------->
     <section class="feed">
@@ -262,60 +263,73 @@
         </div>
       </article>
     </section>
-    <section id="right-side">
-      <div class="challenges">
-        <i class="fas fa-medal"></i>
-        <h2 class="challenges__heading">Challenges</h2>
-        <p class="challenges__text">Inscrivez-vous à un challenge de course à pied ou de cyclisme pour rester au top, accomplir de nouvelles performances et vous mesurer aux autres.</p>
-        <a class="challenges__link" href="#">Voir tous les challenges</a>
+
+    <section class="right-side">
+      <div class="right-side__challenges right-side__div">
+        <figure><i class="fas fa-medal"></i></figure>
+
+        <div>
+          <h2>Challenges</h2>
+          <p>Inscrivez-vous à un challenge de course à pied ou de cyclisme pour rester au top, accomplir de nouvelles performances et vous mesurer aux autres.</p>
+          <a href="#">Voir tous les challenges</a>
+        </div>
       </div>
-      <div class="clubs">
-        <h2 class="clubs__heading">Vos clubs</h2>
+      <div class="right-side__clubs right-side__div">
+        <h2>Vos clubs</h2>
         <div class="clubs__cards">
           <div class="clubs__card">
-            <a href="#"><img src="/public/image/club-polygone-vincennes.jpg" alt="piste du polygone dans le bois de Vincennes" />Polygone de Vincennes</a>
+            <a href="#" title="Polygone de Vincennes"><img src="/public/image/club-polygone-vincennes.jpg" alt="piste du polygone dans le bois de Vincennes" /></a>
           </div>
           <div class="clubs__card">
-            <a href="#"><img src="/public/image/club-blousons-noirs.jpg" alt="un groupe de jeunes des années 70 en blouson noirs" />Le Club des Blousons Noirs</a>
+            <a href="#" title="Le Club des Blousons Noirs"><img src="/public/image/club-blousons-noirs.jpg" alt="un groupe de jeunes des années 70 en blouson noirs" /></a>
           </div>
           <div class="clubs__card">
-            <a href="#"><img src="./public/image/club-ehpad-mafia.jpg" alt="le parrain" />EHPAD MAFIA SCEAUX</a>
+            <a href="#" title="EHPAD MAFIA SCEAUX"><img src="./public/image/club-ehpad-mafia.jpg" alt="le parrain" /></a>
           </div>
         </div>
-        <a class="clubs__link" href="#">Voir tous les clubs</a>
+        <button class="btn clubs__link" href="#">Voir tous les clubs</button>
       </div>
-      <div class="tip-box">
-        <i class="far fa-eye"></i>
-        <h2 class="tip-box__heading">Essayer une zone de confidentialité</h2>
-        <p class="tip-box__text">Vous pouvez masquer votre adresse personnelle, votre adresse professionnelle ou d'autres adresses privées dans vos activités.</p>
-        <a class="tip-box__link" href="#">Vérifier les paramètres de confidentialité</a>
+      <div class="right-side__tip right-side__div">
+        <figure><i class="far fa-eye"></i></figure>
+        <div>
+          <h2 class="tip-box__heading">Essayer une zone de confidentialité</h2>
+          <p class="tip-box__text">Vous pouvez masquer votre adresse personnelle, votre adresse professionnelle ou d'autres adresses privées dans vos activités.</p>
+          <a class="tip-box__link" href="#">Vérifier les paramètres de confidentialité</a>
+        </div>
       </div>
-      <div class="contact-suggest">
+      <div class="contact-suggest right-side__div">
         <h2 class="contact-suggest__heading">Suggestions d'amis</h2>
         <div class="contact-suggest__cards">
           <div class="contact-suggest__card">
             <img class="contact-suggest__pp" src="public/image/suggest-christian-souris.jpg" alt="Christian Clavier" />
-            <h3 class="contact-suggest__name">Christian souris</h3>
-            <h4 class="contact-suggest__place">Bruxelles, Belgique</h4>
-            <button class="contact-suggest__sub">S'abonner</button>
+            <div>
+              <h3 class="contact-suggest__name">Christian Calvier</h3>
+              <h4 class="contact-suggest__place">Bruxelles, Belgique</h4>
+              <a href="#" class="contact-suggest__sub">S'abonner</a>
+            </div>
           </div>
           <div class="contact-suggest__card">
             <img class="contact-suggest__pp" src="public/image/suggest-axel-caron.png" alt="Axel Caron" />
-            <h3 class="contact-suggest__name">Axel Caron</h3>
-            <h4 class="contact-suggest__place">Paris, Île-de-France</h4>
-            <button class="contact-suggest__sub">S'abonner</button>
+            <div>
+              <h3 class="contact-suggest__name">Axel Caron</h3>
+              <h4 class="contact-suggest__place">Paris, Île-de-France</h4>
+              <a href="#" class="contact-suggest__sub">S'abonner</a>
+            </div>
           </div>
           <div class="contact-suggest__card">
             <img class="contact-suggest__pp" src="public/image/suggest-thomas-voeckler.jpg" alt="Thomas Voeckler" />
-            <h3 class="contact-suggest__name">Thomas Voeckler</h3>
-            <h4 class="contact-suggest__place">Sur la moto d'Eurosport, Col du Tourmalet</h4>
-            <button class="contact-suggest__sub">S'abonner</button>
+            <div>
+              <h3 class="contact-suggest__name">Thomas Voeckler</h3>
+              <h4 class="contact-suggest__place">Moto d'Eurosport, Col du Tourmalet</h4>
+              <a href="#" class="contact-suggest__sub">S'abonner</a>
+            </div>
           </div>
         </div>
-        <a class="contact-suggest__link" href="#">Trouvez et invitez vos amis</a>
+        <button class="contact-suggest__link" href="#">Trouvez et invitez vos amis</button>
       </div>
     </section>
-    <footer id="footer">
+
+    <footer class="footer">
       <ul class="footer__links">
         <li class="footer__link">Assistance<a href=""></a></li>
         <li class="footer__link"><a href="#">Inscription</a></li>
@@ -341,7 +355,7 @@
             </li>
           </ul>
         </li>
-        <li class="footer__dropdown footer__website-info">
+        <li class="dropdown footer__dropdown footer__website-info">
           <button>À Propos<i class="fas fa-angle-down"></i></button>
           <ul class="footer__website-info-list">
             <li class="footer__website-info-link"><a href="#">À propos</a></li>
