@@ -1,48 +1,16 @@
 .left-side {
   padding: 0 5%;
-  .user-info {
+
+  &__user-info {
     margin-top: 50px;
     margin-bottom: 20px;
     display: flex;
     background-color: white;
     flex-direction: column;
     box-shadow: $shadow-main;
-
-    &__heading {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: -50px;
-    }
-
-    &__social {
-      display: flex;
-      justify-content: space-evenly;
-      padding: 16px 2px;
-      border-bottom: 2px solid $color-main-white;
-      div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        &:nth-child(2) {
-          border-left: 2px solid$color-main-white;
-          border-right: 2px solid$color-main-white;
-          padding: 0 16px;
-        }
-        p {
-        }
-      }
-    }
-
-    &__last-trng {
-      padding: 16px 20px;
-      border-bottom: 2px solid $color-main-white;
-      a {
-        font-weight: 600;
-      }
-    }
   }
-  .left-side__link {
+
+  &__link {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,6 +23,57 @@
     }
   }
 }
+
+.user-info {
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+  }
+  &__pp {
+    figure {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background: none;
+    }
+
+    img {
+      border: 1px transparent solid;
+      border-radius: 80px;
+      width: 100px;
+      box-shadow: 0 8px 24px rgb(13 13 18 /0.2);
+    }
+  }
+  &__social {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px 2px;
+    border-bottom: 2px solid $color-main-white;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &:nth-child(2) {
+        border-left: 2px solid$color-main-white;
+        border-right: 2px solid$color-main-white;
+        padding: 0 16px;
+      }
+      p {
+      }
+    }
+  }
+
+  &__last-trng {
+    padding: 16px 20px;
+    border-bottom: 2px solid $color-main-white;
+    a {
+      font-weight: 600;
+    }
+  }
+}
+
 .user-stats {
   &__slct-btns {
     display: flex;

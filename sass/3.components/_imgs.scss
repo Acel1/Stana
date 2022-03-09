@@ -1,30 +1,3 @@
-.header__user {
-  a {
-    img {
-      width: 35px;
-      border: transparent solid 1px;
-      border-radius: 2rem;
-    }
-  }
-}
-
-.user-info {
-  &__heading {
-    figure {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      background: none;
-    }
-
-    img {
-      border: 1px transparent solid;
-      border-radius: 80px;
-      width: 100px;
-      box-shadow: 0 8px 24px rgb(13 13 18 /0.2);
-    }
-  }
-}
 .user-stats {
   &__week-graph {
     width: 65%;

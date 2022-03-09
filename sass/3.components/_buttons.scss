@@ -4,15 +4,14 @@
   align-items: center;
   border: none;
   background: none;
-
   cursor: pointer;
-
   padding: 5px;
   &:hover {
     color: $color-main;
   }
 
   &--grey {
+    font-size: $font-medium;
     color: $color-component;
     padding: 4px;
 
@@ -23,7 +22,6 @@
 
   &--bg {
     background-color: $color-main;
-
     color: $color-main-white;
     border-radius: 0.4rem;
     margin: $margin-header;
@@ -32,5 +30,17 @@
 
   &--small {
     padding: 8px 12px;
+  }
+  &--left-side-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    i {
+      color: $color-component;
+    }
+    &:hover {
+      color: $color-main;
+    }
   }
 }

@@ -18,45 +18,44 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <nav class="header__left-nav" id="left-nav">
-          <h1 class="header__logo" alt="application suivi entrainement parodie stannah strava">
+        <nav class="header__left-nav">
+          <h1 alt="application suivi entrainement parodie stannah strava">
             <a href="index.html"><img src="public/image/img-stava.png" alt="main-logo" /></a>
           </h1>
           <button class="btn btn--grey" id="form-btn"><i class="fas fa-search"></i></button>
-          <div class="dropdown">
-            <a href="#">Tableau de bord</a><i class="fas fa-angle-down"></i>
-            <ul class="dropdown__sub dropdown__sub--header">
+          <div class="dropdown dropdown--hover">
+            <a class="dropdown__top" href="#"><span>Tableau de bord</span><i class="fas fa-angle-down"></i></a>
+            <ul class="dropdown__sub dropdown__sub--hover">
               <li class=""><a href="#">Mes segments</a></li>
               <li class=""><a href="#">Mes itinéraires</a></li>
               <li class=""><a href="#">Flux d'activités</a></li>
             </ul>
           </div>
-          <div class="dropdown">
-            <a href="#">Entraînement</a><i class="fas fa-angle-down"></i>
-            <ul class="dropdown__sub dropdown__sub--header">
+          <div class="dropdown dropdown--hover">
+            <a class="dropdown__top" href="#"><span>Entraînement</span><i class="fas fa-angle-down"></i></a>
+            <ul class="dropdown__sub dropdown__sub--hover">
               <li class=""><a href="#">Calendrier</a></li>
               <li class=""><a href="#">Mes activités</a></li>
             </ul>
           </div>
-          <div class="dropdown">
-            <a href="#">Explorer</a><i class="fas fa-angle-down"></i>
-            <ul class="dropdown__sub dropdown__sub--header">
+          <div class="dropdown dropdown--hover">
+            <a class="dropdown__top" href="#"><span>Explorer</span><i class="fas fa-angle-down"></i></a>
+            <ul class="dropdown__sub dropdown__sub--hover">
               <li class=""><a href="#">Explorateur de segments</a></li>
               <li class=""><a href="#">Recherche de segments</a></li>
               <li class=""><a href="#">Recherche d'athlètes</a></li>
               <li class=""><a href="#">Clubs</a></li>
             </ul>
           </div>
-          <a href="#">Challenges</a>
+          <a class="btn" href="#">Challenges</a>
         </nav>
 
         <nav class="header__right-nav">
           <button class="btn btn--bg">Offrir un abonnement</button>
-          <button class="notification-bell btn btn--grey"><i class="far fa-bell"></i></button>
-          <div class="dropdown header__user">
-            <a href=""><img src="public/image/profile-picture.jpg" alt="user" /> </a><i class="fas fa-angle-down"></i>
-
-            <ul class="dropdown__sub dropdown__sub--user">
+          <button class="btn btn--grey"><i class="far fa-bell"></i></button>
+          <div class="dropdown dropdown--hover">
+            <a class="dropdown__top" href="#"><img class="header__user-pp" src="public/image/profile-picture.jpg" alt="user" /> <i class="fas fa-angle-down"></i></a>
+            <ul class="dropdown__sub dropdown__sub--hover">
               <li class=""><a href="#">Trouver des amis</a></li>
               <li class=""><a href="#">Mon profil</a></li>
               <li class=""><a href="#">Paramètres</a></li>
@@ -83,9 +82,9 @@
     </header>
 
     <section class="left-side">
-      <div class="user-info">
+      <div class="left-side__user-info user-info">
         <div class="user-info__heading">
-          <figure class=""><img class="" src="/public/image/profile-picture.jpg" alt="profile picture" /></figure>
+          <figure class="user-info__pp"><img src="/public/image/profile-picture.jpg" alt="profile picture" /></figure>
           <h2>Axel Caron</h2>
         </div>
         <div class="user-info__social">
@@ -111,7 +110,7 @@
           <i class="fas fa-chevron-right"></i>
         </a>
       </div>
-      <div class="user-stats">
+      <div class="left-side__user-stats user-stats">
         <div class="user-stats__slct-btns">
           <button class="btn"><i class="far fa-chart-bar"></i></button>
           <button class="btn"><i class="fas fa-bicycle"></i></button>
@@ -211,9 +210,9 @@
     <!---- FEED --------
     ------------------->
     <section class="feed">
-      <div class="dropdown dropdown--feed">
-        <button>Abonnements<i class="fas fa-angle-down"></i></button>
-        <ul class="dropdown__sub dropdown__sub--feed">
+      <div class="dropdown dropdown--click">
+        <button class="dropdown__top">Abonnements<i class="fas fa-angle-down"></i></button>
+        <ul class="dropdown__sub dropdown__sub--click">
           <li><a href="#">Polygone de Vincennes</a></li>
           <li><a href="#">Vos activités</a></li>
           <li><a href="#">Le Club des Blousons Noirs</a></li>
@@ -336,10 +335,10 @@
         <li class="footer__link"><a href="#">Conditions générales</a></li>
         <li class="footer__link"><a href="#">Politique de confidentialité</a></li>
       </ul>
-      <ul class="footer__dropdowns">
-        <li class="footer__dropdown footer__language-slct">
-          <button>Français<i class="fas fa-angle-down"></i></button>*
-          <ul class="footer__language-list">
+      <div class="footer__dropdowns">
+        <div class="dropdown dropdown--click">
+          <button class="dropdown__top">Français<i class="fas fa-angle-down"></i></button>
+          <ul class="dropdown__sub dropdown__sub--click">
             <li class="footer__language"><a href="#"> Français</a></li>
             <li class="footer__language">
               <a href="#">English</a>
@@ -354,27 +353,27 @@
               <a href="#">Italiano</a>
             </li>
           </ul>
-        </li>
-        <li class="dropdown footer__dropdown footer__website-info">
-          <button>À Propos<i class="fas fa-angle-down"></i></button>
-          <ul class="footer__website-info-list">
+        </div>
+        <div class="dropdown dropdown--click">
+          <button class="dropdown__top">À Propos<i class="fas fa-angle-down"></i></button>
+          <ul class="dropdown__sub dropdown__sub--click">
             <li class="footer__website-info-link"><a href="#">À propos</a></li>
             <li class="footer__website-info-link"><a href="#">Offres d'emloi</a></li>
             <li class="footer__website-info-link"><a href="#">Entreprise</a></li>
             <li class="footer__website-info-link"><a href="#">Normes de la communauté Stana</a></li>
           </ul>
-        </li>
-        <li class="footer__dropdown footer__website-news">
-          <button>Abonnez vous à notre flux<i class="fas fa-angle-down"></i></button>
-          <ul class="footer__website-news-list">
+        </div>
+        <div class="dropdown dropdown--click">
+          <button class="dropdown__top">Abonnez vous à notre flux<i class="fas fa-angle-down"></i></button>
+          <ul class="dropdown__sub dropdown__sub--click">
             <li class="footer__news-link"><a href="#">Facebook</a></li>
             <li class="footer__news-link"><a href="#">Twitter</a></li>
             <li class="footer__news-link"><a href="#">Instagram</a></li>
             <li class="footer__news-link"><a href="#">Copain d'avant</a></li>
             <li class="footer__news-link"><a href="#">Youtube</a></li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
       <p class="footer__copyright"><i class="far fa-copyright">2021 Stana</i></p>
     </footer>
 
