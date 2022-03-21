@@ -18,49 +18,46 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <nav class="header__left-nav">
-          <h1 class="header__logo" alt="application suivi entrainement parodie stannah strava">
-            <a href="index.html"><img src="public/image/img-stava.png" alt="main-logo" /></a>
-          </h1>
-
-          <ul class="nav__list">
-            <li class="nav__item">
-              <button class="btn btn--grey" id="form-btn"><i class="fas fa-search"></i></button>
-            </li>
-            <li class="nav__item nav__item-drop">
+        <h1 class="header__logo" alt="application suivi entrainement parodie stannah strava">
+          <a href="index.html"><img src="public/image/img-stava.png" alt="main-logo" /></a>
+        </h1>
+        <nav class="header__left-nav left-nav">
+          <button class="btn btn-form btn--grey form-btn"><i class="fas fa-search"></i></button>
+          <ul class="nav-list">
+            <li class="nav-list__item">
               <a class="" href="#"><span>Tableau de bord</span><i class="fas fa-angle-down"></i></a>
-              <ul class="nav__item-drop-sub">
+              <ul class="nav-list__sub">
                 <li><a href="#">Mes segments</a></li>
                 <li><a href="#">Mes itinéraires</a></li>
                 <li><a href="#">Flux d'activités</a></li>
               </ul>
             </li>
-            <li class="nav__item nav__item-drop">
+            <li class="nav-list__item">
               <a class="" href="#"><span>Entraînement</span><i class="fas fa-angle-down"></i></a>
-              <ul class="nav__item-drop-sub">
+              <ul class="nav-list__sub">
                 <li><a href="#">Calendrier</a></li>
                 <li><a href="#">Mes activités</a></li>
               </ul>
             </li>
-            <li class="nav__item nav__item-drop">
+            <li class="nav-list__item">
               <a class="n" href="#"><span>Explorer</span><i class="fas fa-angle-down"></i></a>
-              <ul class="nav__item-drop-sub">
+              <ul class="nav-list__sub">
                 <li><a href="#">Explorateur de segments</a></li>
                 <li><a href="#">Recherche de segments</a></li>
                 <li><a href="#">Recherche d'athlètes</a></li>
                 <li><a href="#">Clubs</a></li>
               </ul>
             </li>
-            <li class="nav__item"><a class="btn" href="#">Challenges</a></li>
           </ul>
+          <a class="btn" href="#">Challenges</a>
         </nav>
 
         <nav class="header__right-nav">
           <button class="btn btn--bg">Offrir un abonnement</button>
           <button class="btn btn--grey"><i class="far fa-bell"></i></button>
-          <div class="nav__item nav__item-drop">
+          <div class="nav-list__item nav-list__item--right-side">
             <a class="" href="#"><img class="header__user-pp" src="public/image/profile-picture.jpg" alt="user" /> <i class="fas fa-angle-down"></i></a>
-            <ul class="nav__item-drop-sub">
+            <ul class="nav-list__sub nav-list__sub--right-side">
               <li><a href="#">Trouver des amis</a></li>
               <li><a href="#">Mon profil</a></li>
               <li><a href="#">Paramètres</a></li>
@@ -70,7 +67,7 @@
           <button class="btn"><i class="fas fa-plus"></i></button>
         </nav>
 
-        <form class="header__form form" id="form-container">
+        <form class="header__form form form-container">
           <select class="form__list btn" name="type" id="type">
             <option value="athlètes" selected>Athlètes</option>
             <option value="clubs">Clubs</option>
@@ -78,10 +75,10 @@
             <option value="segments">Segments</option>
           </select>
           <div class="form__text-field">
-            <input type="text" name="research" class="form__input" placeholder="Rechercher" />
-            <button class="btn form__input-btn"><i class="fas fa-search"></i></button>
+            <input type="text" name="research" class="form__input-text" placeholder="Rechercher" />
+            <button class="btn"><i class="fas fa-search"></i></button>
           </div>
-          <button class="btn" id="esc-nav-form"><i class="fas fa-times"></i></button>
+          <button class="btn esc-nav-form"><i class="fas fa-times"></i></button>
         </form>
       </div>
     </header>
@@ -217,7 +214,7 @@
     <section class="feed">
       <div class="dropdown dropdown--click">
         <button class="dropdown__top">Abonnements<i class="fas fa-angle-down"></i></button>
-        <ul class="dropdown__sub dropdown__sub--click">
+        <ul class="dropdown__sub">
           <li><a href="#">Polygone de Vincennes</a></li>
           <li><a href="#">Vos activités</a></li>
           <li><a href="#">Le Club des Blousons Noirs</a></li>
@@ -341,25 +338,25 @@
         <li class="footer__link"><a href="#">Politique de confidentialité</a></li>
       </ul>
       <div class="footer__dropdowns">
-        <div class="dropdown dropdown--click">
+        <div class="dropdown">
           <button class="dropdown__top">Français<i class="fas fa-angle-down"></i></button>
-          <ul class="dropdown__sub dropdown__sub--click">
-            <li class="footer__language"><a href="#"> Français</a></li>
-            <li class="footer__language">
+          <ul class="dropdown__sub">
+            <li><a href="#"> Français</a></li>
+            <li>
               <a href="#">English</a>
             </li>
-            <li class="footer__language">
+            <li>
               <a href="#">Deutch</a>
             </li>
-            <li class="footer__language">
+            <li>
               <a href="#">Español</a>
             </li>
-            <li class="footer__language">
+            <li>
               <a href="#">Italiano</a>
             </li>
           </ul>
         </div>
-        <div class="dropdown dropdown--click">
+        <div class="dropdown">
           <button class="dropdown__top">À Propos<i class="fas fa-angle-down"></i></button>
           <ul class="dropdown__sub dropdown__sub--click">
             <li class="footer__website-info-link"><a href="#">À propos</a></li>
@@ -368,7 +365,7 @@
             <li class="footer__website-info-link"><a href="#">Normes de la communauté Stana</a></li>
           </ul>
         </div>
-        <div class="dropdown dropdown--click">
+        <div class="dropdown">
           <button class="dropdown__top">Abonnez vous à notre flux<i class="fas fa-angle-down"></i></button>
           <ul class="dropdown__sub dropdown__sub--click">
             <li class="footer__news-link"><a href="#">Facebook</a></li>

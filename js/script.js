@@ -1,11 +1,11 @@
 //HEADER FORM
 //--form btn makes appear form container and hide whole left nav
 
-let formBtn = document.getElementById("form-btn");
+let formBtn = document.querySelector(".form-btn");
 
-let form = document.getElementById("form-container");
+let form = document.querySelector(".form-container");
 
-let leftNav = document.getElementById("left-nav");
+let leftNav = document.querySelector(".left-nav");
 
 formBtn.addEventListener("click", function () {
   leftNav.style.display = "none";
@@ -14,30 +14,29 @@ formBtn.addEventListener("click", function () {
 
 //--esc form
 
-let formEscBtn = document.getElementById("esc-nav-form");
+let formEscBtn = document.querySelector(".esc-nav-form");
 
 formEscBtn.addEventListener("click", function () {
   form.style.display = "none";
   leftNav.style.display = "flex";
 });
 
-//DROPDOWNS
+// DROPDOWNS
 
 let dropdown = document.querySelectorAll(".dropdown");
-let dropdownBtn = document.querySelectorAll(".dropdown-btn");
-let subMenu = document.querySelectorAll(".dropdown ul");
-let dropdownLi = document.querySelectorAll(".dropdown li");
 
-let toggleIndex;
+dropdown.forEach((e) => {
+  let subMenu = e.children[1];
+  let toggleIndex;
+  // let dropdownLi = subMenu.children;
 
-dropdownBtn.addEventListener("click", toggleDropdown);
-
-function toggleDropdown() {
-  if (!toggleIndex) {
-    subMenu.style.height = `${subMenu.scrollHeight}px`;
-    toggleIndex = true;
-    return;
-  }
-  subMenu.style.height = 0;
-  toggleIndex = false;
-}
+  e.addEventListener("click", function () {
+    if (!toggleIndex) {
+      subMenu.style.height = `${subMenu.scrollHeight}px`;
+      toggleIndex = true;
+      return;
+    }
+    subMenu.style.height = 0;
+    toggleIndex = false;
+  });
+});
